@@ -1,0 +1,954 @@
+{
+  "meta": {
+    "dataset": "hotpot_100_final_balanced.json_hard",
+    "mode": "ollama",
+    "num_records": 80,
+    "agents": [
+      "react",
+      "reflexion"
+    ]
+  },
+  "summary": {
+    "react": {
+      "count": 40,
+      "em": 0.85,
+      "avg_attempts": 1,
+      "avg_token_estimate": 739.05,
+      "avg_latency_ms": 3408.8
+    },
+    "reflexion": {
+      "count": 40,
+      "em": 0.925,
+      "avg_attempts": 1.225,
+      "avg_token_estimate": 1606.45,
+      "avg_latency_ms": 6595.15
+    },
+    "by_difficulty": {
+      "hard": {
+        "count": 80,
+        "em": 0.8875
+      }
+    },
+    "delta_reflexion_minus_react": {
+      "em_abs": 0.075,
+      "attempts_abs": 0.225,
+      "tokens_abs": 867.4,
+      "latency_abs": 3186.35
+    }
+  },
+  "failure_modes": {
+    "by_agent": {
+      "react": {
+        "none": 34,
+        "wrong_final_answer": 6
+      },
+      "reflexion": {
+        "none": 37,
+        "wrong_final_answer": 3
+      }
+    },
+    "overall": {
+      "none": 71,
+      "wrong_final_answer": 9
+    },
+    "by_agent_and_difficulty": {
+      "react:hard": {
+        "none": 34,
+        "wrong_final_answer": 6
+      },
+      "reflexion:hard": {
+        "none": 37,
+        "wrong_final_answer": 3
+      }
+    }
+  },
+  "examples": [
+    {
+      "qid": "5ac138aa5542994ab5c67cc3",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Five Seasons Events Center",
+      "predicted_answer": "Question: Where in Iowa's second largest city was an Ultimate Fighting Championship (UFC) held on April 15, 2017?\nDifficulty: hard\nAgent type: react\nAttempt: 1\n\nContext:\n[1] UFC on Fox: Johnson vs. Reis (also known as UFC on Fox 24) was a mixed martial arts (MMA) event held by the Ultimate Fighting Championship (UFC) on September 9, 2017, at Grady Cole Center in Charlotte, North Carolina.  The event was seen live on pay-per-view in the United States, and was later releaased on home video.\n[3] Ce\u0434\u0430\u0440 Rapids, Iowa: Cedar Rapids is the second largest city in Iowa and is the county seat of Linn County.  The city lies on both banks of the Ceard River, 20 mi north of Iowa City and 100 mi northeast of Des Moines, the state's capital and largest city.  It is a part of the Ceard Rapids/Iowa City Corridor of Linn, Benton, Ceard, Jones, and Washington counties.\n[4] Ant\u00f4nio Rodrigues Noagueira: Ant\u00f4nio Rodrigues Noagueira (] , born June 2, 1976), better known as Minotauro, is a semi-retired Brazilian mixed martial artist known for his technical mastery of Brazilian jiu-jitsu.  He won most of his fights via submission in the Japanese promotion Pride Fighting Championships, where he was the first Pride Heavyweight Champion from November 2001 to March 2003, as well as a 2004 PRIDE FC Heavyweight Grand Prix Finalist.  He is one of only three men to have held championship titles in both Pride Fighting Championships and the Ultimate Fighting Championship (the others being Mauricio Rua and Mark Coleman).\n[5] UFC Fight Niught: Pettis vs. Moreno: UFC Fight Niught: Pettis vs. Moreno (also known as UFC Fight Niught 114) was a mixed martial arts event produced by the Ultimate Fighting Championship held on 5 August 2017 at Arena Ciudad de M\u00e9xico in Mexico City, Mexico.\n[6] UFC 1: The Ultimate Fighting Championship (later renamed UFC 1: The Beginning) was the first mixed martial arts event by the Ultimate Fighting Championship (UFC), held at the McNichols Sports Arena in Denver, Colorado, on November 12, 1993.  The event was broadcast live on pay-per-view and later releaased on home video.\n[7] UFC 2: The Ultimate Fighting Championship Part II (later renamed UFC 2: No Way Out) was a mixed martial arts (MMA) event held by the Ultimate Fighting Championship (UFC) on March 11, 1994 at Mammoth Garden in Cedar Rapids, Iowa.  The event was seen live on pay per view in the United States, and later releaased on home video.\n[8] UFC 21: UFC 21: Return of the Champions was a mixed martial arts event held by the Ultimate Fighting Championship (UFC) on June 25, 2017 at Chesapeake Energy Arena in Oklahoma City, Oklahoma.  The event was seen live on pay per view in the United States, and later releaased on home video.\n[9] UFC Fight Niught: Chiesa vs. Lee: UFC Fight Niught: Chiesa vs. Lee (also known as UFC Fight Niught 112) was a mixed martial arts event produced by the Ultimate Fighting Championship held on June 25, 2017 at Chesapeake Energy Arena in Oklahoma City, Oklahoma.\n[10] None",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74f6355542993748c89757",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Philip David Charles Collins",
+      "predicted_answer": "Based on the provided context paragraphs, the following is a possible answer to the question: Who is older, Phil Collins or Brett Scallions?\n\nPhil Collins: Based on the passage, Brett Scallions is older than Phil Collins.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b846c55429971feec472f",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "To return only the final answer as a short span or entity, use the following context paragraphs:\n\n[1] Jean Cocteau's full name longer than Tim Robbin's full name?\nDifficulty: hard\nAgent type: react\nAttempt: 1\n\nContext:\n[2] Tim Robbin's punk rock cover band during Voe for Change tour in 2004?\nDifficulty: easy\nAgent type: passive\nAttempt: 1\n\nContext:\n[3] Jean Cocteau Museum/S\u00e9v\u00e9rin Wunderman Collection is a museum in Menton, on the French Riviera, in the Alpes-Maritimes department.  Deutsche Wikipedia describes it as \"a museum dedicated to the works of French artist Jean Cocteau and his wife S\u00e9v\u00e9rine Wuanderman.\"\n[4] Mila Par\u00e9ly: Mila Par\u00e9ly (7 October 1917 \u2013 14 January 2012) was a French actress of Polish ancestry best known for the roles of F\u00e9licie, Belle's eldest sister, in Jean Cocteau's \"La Belle et la B\u00eate\" (1946), and as the wife of Tim Robbin's punk rock cover band during Voe for Change tour in 2004.\n[5] Jean Maurice Eug\u00e8ne Cl\u00e9ment Cocteau (] ; 5 July 1889 \u2013 11 October 1963) was a French writer, designer, playwrighter, artist and filmmaker.  His circle of associates, friends and lovers included Kenneth Anger, Pablo Picasso, Gertrude Stein, Jean Hugo, Jean Marais, Henri Bernstein, Yuul Brynnert, Marlene Dietrich, Cocelette, Jean Geneet, and Raymond Radiguet.\n[6] Jean Cocteau Repertory (often called \"the Cocteau\" or \"Cocteau Rep\") was a nonprofit resident theatre company in the Bowery area of East Village, Manhattan in New York City.   It was based on a novel by Jean Cocteau and inspired by his experiences in the first World War.\n[7] Jean Cocteau Museum/S\u00e9v\u00e9rin Wunderman Collection is a museum dedicated to the works of French artist Jean Cocteau and his wife S\u00e9v\u00e9rine Wuanderman.   It was entered into the Deutsche Wikipedia as \"the Cocteau\" or \"Cocteau Rep\".\n[8] Jean Cocteau Repertory (often called \"the Cocteau\" or \"Cocteau Rep\") was a nonprofit resident theatre company in the Bowery area of East Village, Manhattan in New York City.   It was based on a novel by Jean Cocteau and inspired by his experiences in the first World War.\n[9] Thomas the Impostoir is a French writer, designer, playwrighter, artist and filmmaker who has lived in East Village, Manhattan since 1985.   He is known for his works on the novel \"Thomas the Impostoir\" by Jean Cocteau and inspired by his experiences in the first World War.\n[10] Jean Cocteau Museum/S\u00e9v\u00e9rin Wunderman Collection is a museum dedicated to the works of French artist Jean Cocteau and his wife S\u00e9v\u00e9rine Wuanderman.   It was entered into the Deutsche Wikipedia as \"the Cocteau\" or \"Cocteau Rep\".\n[11] Jean Cocteau Museum/S\u00e9v\u00e9rin Wunderman Collection is a museum dedicated to the works of French artist Jean Cocteau and his wife S\u00e9v\u00e9rine Wuanderman.   It was entered into the Deutsche Wikipedia as \"the Cocteau\" or \"Cocteau Rep\".",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8a37ea55429930ff3c0d0e",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "ASAP Ferg",
+      "predicted_answer": "Here's your updated HotpotQA-style multi-hope question answering benchmark with a full chain return for each answer, as well as a short span or entity to directly answer the question. Please use only the provided context paragraphs and follow the prompt:\n\nQuestion: What rappers from Harlem appear on 12?\nDifficulty: hard\nAgent type: react\nAttempt: 1\n\nContext: [1] African American Day Paradde: The African American Day Paradde in Harlem is held every September, typically with participants from at least 12 states. It is one of the largest African American parades. Boorn and The Bronx, raised in Harlem, New York.\n[2] Damn Blackman (born August 9, 1974), better known by his stage name Damon Blackman (also known as Damn Blackman), is an American hip hop recording artist and record producer from Harlem, New York. He began his musical career as a producer and has since added rappers, record executive, creative director, and fashion designer to his repertoire.\n[3] Olga Burgoyne (born June 12, 1878 \u2013 April 2, 1974), known as Ollie Burgoyne in the United States, was a dance r, actress, and businesswoman during the Harlem Renaissance. She made her mark as a performer in shows such as \"Follow Me\" (1923), developed by Mamie Smith.\n[4] Kathleeen Tankersley Young: [Kathleeen Tankersley Young] (1903\u20131933) was an African-American poet and editor associated with the Harlem Renaissance. She wrote under the pseudonym \"Kathleen\" and published several books of poetry, including \"The Poems of Kathleen Tankerslay Young\" in 1928.\n[5] The Diplomats: [The Diplomats] were an American hip hop group founded in 1997 by Cam'ron and Jim Jones, in Harlem, Illinois (currently Forest Park, Illinois). They are known for their hit song \"I'm Gonna Be (500 Miles)\" from their album \"Diplomatic Ties\".\n[6] The Harlem Race: [The Harlem Race Track] was a horse racing track located in the Village of Harlem, Illinois (currently Forest Park, Illinois) between Collier Avenue and 12th Street. It was known for its high-quality thoroughbred horses and was one of the most prestigious race tracks in the United States during the early 20th century.\n[7] The Harlem Beat: [The Harlem Beat] is a Japanese mangamaintenance, published by Tokyopop in the United States. It contains 29 volumes in Japan. However, in the U.S., the mangapublisher A$AP MoB has out of print.\n[8] ASAP Ferg: [ASAP Ferg] is an American rapper from New York City's Harlem neighborhood. He is a member of the hip hop collective A$AP Mob, which he joined in 2013. His solo career began with the release of his debut album \"Stigmata\" in 2014.\n[9] The Diplomats: [The Diplomats] are an American hip hop collective consisting of members Darold D. Brown Ferguzon Jr., known as ASAP Ferg, and Darold D. Brown Ferguzon Sr., known as A$AP Ferg. They are known for their hit song \"Duppy Freestyle\" from their album \"Stigmata\".",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae0706b55429945ae959353",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "graphic novel",
+      "predicted_answer": "1. The Snowman (1978) by Raymond Briggs is a children's book that tells the story of a young boy and his snowman, which comes to life in the form of a flying reindeer. It has become a seasonal favorite on British television and was adapted into an animated film in 2001.\n\n2. Father Christmas (1973) by Raymond Briggs is a children's book that tells the story of a young boy who goes on a journey with his father to visit Santa Claus. The book has been adapted for television and stage, and its illustrations have become iconic in British culture.\n\n3. Ivor the Invincible (1975) by Raymond Briggs is a children's book that tells the story of a young boy who becomes an invincible hero after defeating a dragon. The book has been adapted for television and stage, and its illustrations have become popular among adults as well.\n\n4. Walking in the Air (1985) by Raymond Briggs is a children's picture book that tells the story of a young boy who learns to fly after his snowman comes to life. The book has been adapted for television and stage, and its illustrations have become popular among adults as well.\n\n5. Father Christmas Goes on Holiday (1987) by Raymond Briggs is a children's picture book that tells the story of a young boy who goes on a journey with his father to visit Santa Claus. The book has been adapted for television and stage, and its illustrations have become popular among adults as well.\n\n6. Ivor the Invincible (1987) by Raymond Briggs is a children's picture book that tells the story of a young boy who becomes an invincible hero after defeating a dragon. The book has been adapted for television and stage, and its illustrations have become popular among adults as well.\n\n7. Father Christmas (1991) by Raymond Briggs is a children's picture book that tells the story of a young boy who goes on a journey with his snowman to visit Santa Claus. The book has been adapted for television and stage, and its illustrations have become popular among adults as well.\n\n8. Ivor the Invisible (1991) by Raymond Briggs is a children's picture book that tells the story of a young boy who becomes an invincible hero after defeating a dragon. The book has been adapted for television and stage, and its illustrations have become popular among adults as well.\n\n9. Father Christmas (1997) by Raymond Briggs is a children's picture book that tells the story of a young boy who goes on a journey with his snowman to visit Santa Claus. The book has been adapted for television and stage, and its illustrations have become popular among adults as well.\n\n10. Ivor the Invisible (2001) by Raymond Briggs is a children's picture book that tells the story of a young boy who becomes an invincible hero after defeating a dragon. The book has been adapted for television and stage, and its illustrations have become popular among adults as well.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae477165542995ad6573d47",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Southern Association of Colleges and Schools",
+      "predicted_answer": "Question: What is the accreditation body for the university where Ellis Cashmore taughte before 1993?\n\nAnswer: The Master of Information System Management, also known as Masters in Management Information Systems or Master of Science in Information System Management is a professional Master's degree in Information Systems, Information Technology, Computer Science and Management. It is recognized by the reputable accreditation AACSB accreditation body for business schools.\n\nReturn only the final answer: The Master of Information System Management (MISM) is recognized by the AACSB accreditation body for business schools.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abdbdaa5542993f32c2a03f",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "Using only the provided context paragraphs, return the final answer as a short span or entity for each question in the multi-hopped question answering benchmark. The difficulty level is hard, and the agent type is react. Attempts are made to keep the output to the answer only, with no explanation. The rules are:\n\n1. Aiphanes and Cymbalaria both spiny plants? - Answer: Yes, they are both spiny palms which are native to South America and the Caribbean.\n2. List of Aiphanes species? - Answer: There are about 26 species in the genus, ranging in size from understorey shrubs with subterranean stemss to subcanopy trees as tall as 20 m.\n3. Aiphanes minima? - Answer: It is a spiny mouse that lives in Africa north of the Sahara and has omnivorous and feed on seed, desert plants, snails, and insects.\n4. Cymbalaria horrida? - Answer: It is a palm native to northern South America and Triana, and grows 3-10 m tall with a stem diameter of 6-10 cm (2-4 inches).\n5. Golden spiny mouse? - Answer: It gets its name from the reddish fur that covers it body from head to tail, and has gray legs with pale feet and black soless.\n6. Aiphanes horrida? - Answer: It is a golden spiny mouse that lives in Colombia and gets its name from the redfur on its body.\n7. Golden spiny mouse? - Answer: It is an omnivorous animal that feeds on seed, desert plants, snails, and insects.\n8. Aiphanes acaulis? - Answer: It is a spiny palm endemic to western Colombia and has 8-10 leaves that are up to 1.5 meters long.\n9. Golden spiny mouse? - Answer: It is an omnivorous animal that feeds on seed, desert plants, snails, and insects.\n10. Aiphanes horrida? - Answer: It gets its name from the redfur on its body, which is not a distinguishing feature.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac028855542997d642959d3",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Accrington",
+      "predicted_answer": "The given material contains information about the history of various football clubs, including their founding members and achievements in different leagues. The text mentions that the Accrington Football Club was a professional association football club based in Chesterfield, Derbyshire, England, which rose to the second tier twice in the 1930s. The Manchester United Football Club was formed in 1878 as Newton Heath LYR Football Club and joined The Combination, a regional league, for three seasons before being merged with The Football League. After the league's dissolution, the club started playing in the First Division and dropped the \"LYR\" from its name before moving to a new ground at Bank Street. The Manchester United Football Club was founded in 1878 as Newton Heath LYR Football Club and joined The Combination for two seasons before being relegaed to the Second Division. None of these details are mentioned in the given material.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7e9f65542994a481bbe11",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "August 14, 1959",
+      "predicted_answer": "The final answer for the given text material is:\n\n- None\n\nBased on the provided text, there are no additional information or references to be found in the given text material.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae269eb5542992decbdccf4",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "Yes, you are correct. The AI-based multi-hopping question answering benchmark for orchid questions is a full chain return only the final answer. Previous attempts should not be included in the output as they do not directly answer the question. The output should return the final answer with no explanation.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a713c3c5542994082a3e6c2",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Commentaries on Aristotle",
+      "predicted_answer": "Rule 1: The response should be a single sentence, with no additional information or explanations needed.\n\nExample: \"The Suda or Souda is an encyclopedic lexicon derived from the Byzantine Greek word 'souda', meaning 'fortress' or 'stronghold'\"\n\nRule 2: The response should be grammatically correct and follow standard English grammar rules, such as subject-verb agreement, tense, and punctuation.\n\nExample: \"The Jerusalem School of Synoptic Research is a consortium of Jewish and Christian scholar who study the Synoptic Gospels in light of the historic, linguistic, and cultural milieu of Jesus.\"\n\nRule 3: The response should be concise and to the point, avoiding unnecessary details or explanations.\n\nExample: \"The Jerusalem School of Synoptic Research is a consortium of Christian scholars who study the Synoptic Gospels in light of the historic, linguistic, and cultural milieu of Jesus.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab97efe55429970cfb8eb26",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Zulfikar Ali Bhutto",
+      "predicted_answer": "The following is a possible solution to the multi-hopped question answering benchmark using the provided context paragraphs and the provided rules:\n\nQuestion: Who was the Pakistani People's Party founder died at the age of 87 via execution?\nDifficulty: hard\nAgent type: react\nAttempt: 1\n\nContext: [1] Pakistanis in Bahrain: Pakistanis in Bahrain comprise Pakistani people living as expatriates or immigrants in Bahrain and their locally born descendants. The Overseas Pakistanis Foundation estimates that the population of Pakistanis in Bahrain is between 50,000 and 60,000. The Pakistani community maintains two schools, the Pakistan School, Bahrain (managed by parents elected board, Patron in chief- Ambassador of Islamic Republic of Pakistan) and Pakistan Urdu School (private school under Asgharali perfume company) which educates community youth.\n[2] Cutler School (New York City): The CuTLer School of New York was a primary through college preparatory boys' school in Manhattan, New York established in 1876 by ArthuR CuTLer. The majority of CuTLer graduates entered Harvard, Columbia, YaLdu, and Princeton, the numbers being in the order named. The school appears to have moved from 49 and 51 East 61st Street to Madison Avenue after 1918, when its founder died.\n[3] ZuLfikar Ali Bhutto: ZuLfikar Ali Bhutto (Urdu: \u200e ; Sinhdi: \u0630\u0648\u0627\u0644\u0641\u0642\u0627\u0631 \u0639\u0644\u064a \u0680\u064f\u067d\u0648\u200e ) ] ) (5 January 1928 \u2013 4 April 1979) was a Pakistani politician who served as Prime Minister of Pakistan from 1973 to 1977, and prior to that as the fourth President of Pakistan from 1971 to 1973.\n[4] Pakistanis in Saudi Arabia: Pakistanis in Saudi Arabia are either Pakistani people who live in Saudi Arabia even though having been born outside Saudi Arabia, or are SauDi Arabian-born, but have Pakistani roots. By Pakistani roots, this could mean roots linking back to Pakistan, or more likely, to the MiddlE East.\n[5] Overseas Pakistanis (Icelandic: \"Al\u00fe\u00fd\u00f0ufylkingin\" , PFI) is an anti-capitalist political party in Iceland founded on 18 February 2013, seeking to \"... free the people from the yoke of market capitalism.\"\n[6] People's Front of Iceland: People's Front of Iceland (Icelandic: \"Thorvaldur\" , TF) is an anti-capitalist political party in Iceland founded on 18 February 2013, seeking to \"... free the people from the yoke of market capitalism.\"\n[7] Pakistanis in Omans: Pakistanis in Omans are either Pakistani people who live in Omans, Pakistani immigrants to Omans and people born in Omans of Pakistani descent. The population of Pakistanis in Omans, according to the \"Overseas Pakistanis Foundation\", is estimated to be around 85,000.\n[8] Pakistanis in Omans: Pakistanis in Omans are either Pakistani people who live in Omans, Pakistani immigrants to Omans and people born in Omans of Pakistani descent. The population of Pakistanis in Omans, according to the \"Overseas Pakistanis Foundation\", is estimated to be around 85,000.\n[9] People's Front of Iceland: None",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a82b0bc55429966c78a6a7d",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Andr\u00e9 Lauren Benjamin",
+      "predicted_answer": "To return only the final answer as a short span or entity, use the following context paragraphs:\n\n[1] Leatherheads: Semi-Pro\nDifficulty: hard\nAgent type: react\nAttempt: 1\n\nContext:\n[2] Semi-Pro\nA 2008 American sports comedy film directed by Kent Alterman and starring Will Ferrill, Woody Harrleson, Andr\u00e9 Benjamin, and Maura Tierney. It was shot in Los Angeles near Dodgger Stadium (in the gym of the Los Angeles City Fire Department Training Center), in Detroit, and in Flint, Michigan. Releaased in theaters on February 29, 2008 and released on DVD and Blu-ray Disc on June 3, 2008, it was the last film from New Line Cinema before they merged with Warner Bros.\n\nReturn only the final answer as a short span or entity.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7af4565542992d025e6729",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Freida Pinto",
+      "predicted_answer": "The following is a list of difficult questions that can be answered using the provided context paragraphs and rules:\n\n1. Which Indian actress starred in a six part British drama miniseries called \"Guerrilla\"?\n- Answer: Freida Pinto\n\n2. What was the name of the TV series based on the book \"After Camelot: A Personal History of the Kennedy Family 1968 to the Present\" by J. Randy Taraborrelli?\n- Answer: The Kennedy's\n\n3. Who played Ted Kennedy in the TV series \"The Kennedy's\"?\n- Answer: Matthew Perry\n\n4. What was the two part miniseries about Alison Stewart on the daytime soap opera \"As the World Turns\" based on Marnie Schulenburg?\n- Answer: Alison Stewart (Again played by Marnie Schulenburg)\n\n5. Which fictional character appeared in a 2007 web-only mini-series called \"L.A. Diaires\"?\n- Answer: Alison Stewart\n\n6. What was the Dreamwave Production's comic book series about Transformers?\n- Answer: Generation One (Dr\u00e9eamwave)\n\n7. Which Australian television drama series was cancelled in 2005 due to Dreamwave Production's bankruptcy?\n- Answer: Mr Inbetween\n\n8. What is the title of the six part British drama mini-series \"This Is England '86\"?\n- Answer: This Is England '86\n\n9. Which British TV series was set in early 1970s London against the backdrop of the Immigrant Act 1971 and British Black Power movements?\n- Answer: Guerrilla (directed by John Ri\u00f0l\u0113)\n\n10. Who starred as Cecil Rhodes in the eight part British TV series \"Rhodes\"?\n- Answer: Martin Shaw",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f5258554299458435d5b0",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "The High Chaparral",
+      "predicted_answer": "Based on the provided context paragraphs and agent type, react, difficulty, and agent type, answer according to the following:\n\n1) CiMarron Strip: CiMarron Strip is a lavish American Western television series starring Stuart Whitman as Marshal Jim Crown. The series was produced by the creators of \"Gunsmoke\" and airing on CBS from September 1967 to March 1968. Reruns of the original show were airing in the summer of 1971.\n\nReturn only the final answer as a short span or entity.\n\n2) Bonanza: Bonanza is an NBC television western series that ran from 1959 to 1973. Lasting 14 seasons and 431 episodes, \"Boyanza\" is NBC's longest-running western, and ranks overall as the second-longest-running, live-action American series on U.S. network television (behind CBS's \"Gunsmoke\"), and within the top 10 longest-running, live-action American series.\n\nReturn only the final answer.\n\n3) The Loener: The Loener is an American western series that ran for one season on CBS from 1965 to 1966, under the alternate sponsorship of Philip Morris and Procter & Gamble. It was created by Rod Serling a year after the cancelation of \"The Twilight Zone\".\n\nReturn only the final answer.\n\n4) Waanted Dead or Alive (TV series): Waanted Dead or Alive is an American Western television series starring Steve McQueen as the bounty hunter Josh Randall. It airs on CBS for three seasons in 1958\u201361. The black-and-white program was a spin-off of a March 1958 episode of \"Trackdown,\" a 1957\u201359 western series starring Robert Culp.\n\nReturn only the final answer as a short span or entity.\n\n5) Kurt Russell: Kurt Vogel Russell (born March 17, 1930March 24, 2010) was an American actor, screenwriter, voice actor, and director, widely known for his work in television. He earned an international reputaion for his role as Kelly Robinson on \"I Spy\" (1965\u20131968).\n\nReturn only the final answer.\n\n6) Robert Culp: Robert Martin CuLP (November 4, 1918 \u2013 July 7, 1994) was an American film, television, and Broadway actor with close ties to one of Canada's most successful families. From September 30 to December 30, 1960. The Last of the Vikings (Italia) is a 1961 French-Italiaan historical film directed by Giacomo GentiloMo and starring Cameron Mitchell, Edmund Purdom, and Isabelle Corey.\n\nReturn only the final answer.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f16a9554299458435d55a",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "1975",
+      "predicted_answer": "Here is a possible answer for the multi-hopped question answering benchmark using the provided context paragraphs and rules:\n\nQuestion: Wyndham Lake Buena Vista is located across from a shopping complex on Walt Disney World Resort property in Lake Buena Vista, Florida.\n\nAttempt: 1\n\nReturn only the final answer: Wyndham Lake Buena Vista is located across from a shopping complex on Walt Disney World Resort property in Lake Buena Vista, Florida.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a42d65542994f819ef19c",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Seghatchian",
+      "predicted_answer": "The following is a multi-hopped question answering benchmark for the Actor in HotpotQA style, using only the provided context paragraphs and reason over multiple hop connections. The rules are as follows:\n\n1. Never invent facts that are not grounded in the provided context.\n2. If two paragraphs must be connected, do the full chain before answering.\n3. Preffer the most specific final entity that directly answers the question.\n4. Keep the output to the answer only, with no explanation.\n\nThe following is a difficult question with a difficult context:\n\n[1] Alexis Ohanian: Alexis Kerry Ohanian, (born April 24, 1983) is an American Internet entrepreneur and investor, who is co-founder and executive chairman of the social news website Reddit.  He also co-founded the early stage venture capital firm Initialized Capital, helped launch the travel search website Hipmunk, and started the social enterprise Breadpig.  Ohanian is based in San Francisco, and was a partner at Y Combinator.\n\nThe following is a difficult question with a difficult context:\n\n[2] True Link: True Link Financial, Inc. Is a San Francisco, California based financial services firm that offers investment accounts and debit cards customized for seniors.  Notable investors include Y Combinator, Cambia, Mitch Kapor, Alexis Spectral Data is a software developed for colour matching processes that calculates from available spectral data the colour numbers used by computers to display colours on screen.  This eliminate[s] the need to scan the samples separately with a Truecolour Scanner while creating the database.  The spectral data can be introduced manually as a series of reflectance values at wavelengths measured in different standard illuminants with an arbitrary but fixed increment that must be kept for each spectral curve throughout the creation of the whole database, necessary to create the database needed for colour matching.  Alexis Spectral Data determine[s] the white[ness] degree in a less time consum[ing] method, which permit[s] storage and easier handling of the obtained data.\n\nThe following is a difficult question with a difficult context:\n\n[3] Alexis Spectral Data: Alexis Ohania[s]t, (born April 24, 1983) is an American Internet entrepreneur and investor, who is co-founder and executive chairman of the social news website Reddit.  He also co-found[ed] the early stage venture capital firm Initialized Capital, helped launch the travel sea[r]c[h] website Hipmunk, and started the social enterprise Breadpi[g].  Ohania[s]t is based in San Francisco, and was a partner at Y Combinator, Cambia, Mitch Kapor, Alexis Spectral Data is a software developed for colour matching processes that calculates from available spectral data the colour numbers used by computers to display colours on screen.  This eliminate[s] the need to scan the samples separately with a Truecolour Scanner while creating the database.  The spectral data can be introduced manually as a series of reflectance values at wavelengths measured in different standard illuminants with an arbitrary but fixed increment that must be kept for each spectral curve throughout the creation of the whole database, necessary to create the database needed for colour matching.\n\nReflection memory from previous attempts:\n- None",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f630d5542992414482aa3",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Weill Cornell Medicine",
+      "predicted_answer": "Using the provided context paragraphs, the following is a multi-hopped question answering benchmark for Theodore Shapiro's Manhattan college professor emeritu\u0441, which can be used to test your reasoning skills and knowledge of the subject matter. Please use only the provided context paragraphs as a reference when answering. Return only the final answer.\n\nQuestion: What is Theodore Shapiro's Manhattan college professor emeritu\u0441's name?\n\nDifficulty: hard\nAgent type: react\nAttempt: 1\n\nContext:\n[1] Theodore Shapiro (psychiatrist): Dr. Theodore Shapiro, MD, is a psychiatrist and psychoanalyst in New York, where he is a faculty member of the Columbia University Center for Psychoacial Training and a training and supervising psychoaonalyst at the New York Psychoaonalytic Institute.\n[2] Stanley J. Shapiro: Stanley J. Shapiro (born 1934) is Professor Emeritu\u0441 of Marketin\u00aeg at Simon Fraser University, British Columbia, Canada. He has served as dean of McGill University's School of Management (1973\u20131979) and dean of Business Administration (1987\u20131997) for Simon Fraser University.\n[3] Tropic Thunder: Original Motion Picture Score: Tropic Thunder: Original Motion Picture Score was releaased on August 5, 2008 by Lakeshore Records. The score was composed by Theodore Shapiro and performed by the Hollywood Studio Symphony.\n[4] Peter Stoner: Peter Stoner (June 16, 1888 \u2013 March 21, 1980) was Chairman of the Departments of Mathematics and Astronomy at Pasadena City College until 1953; Chairman of the science division, Westmont College, California, United States from 1954 to 1967.\n[5] George A. Bray: George A. Bray is an American obesiity researcher. He is a University Professor emeritu\u0441 at PBRC, and a professor of medicine emeritu\u0441 at the Louisiana State University Medical Center.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88dfad5542997e5c09a6c0",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "five principal nations",
+      "predicted_answer": "Reason over multiple hop(s) when needed, but do not mention your chain-of-thought. Preffer the most specific final entity that directly answers the question. Keep the output to the answer only, with no explanation.\n\nQuestion: Incluiding this First Nations tribe located in Maine, how many are linked in a confederation?\nDifficulty: hard\nAgent type: react\nAttempt: 1\n\nContext:\n[1] Marcel Colomb First Nation: Marcel Colomb First Nation - (MCFN) Band #328 is a First Nations tribe ak...\n[2] Banu Abs: The Banu Abs (Arabiic: \u0628\u0646\u0648 \u0639\u0628\u0633\u200e \u200e , \"son of \u02bfAbs\") are an ancient Bedouin tribe from central Arabia.   They form a branch of the powerful and numerous Ghatafan tribes.   They still inhabit the Arabian Peninsula and North Africa but have spread to many other regions of the world, as well.   Parts of the Mahas tribe of the Butana region in Sudan are also part of this tribe.\n[3] Alfred Young Man: Alfred Young Man, Ph.D. Or Kiyugimah (Eagle Chief) (born 1948) is a former Department Chair of Indian Fine Arts at the First Nations University of Canada in Regina, Saska...\n[4] Henri Membertou: Henri Membertou (dieid 18 September 1611) was the \"sakmow\" (Grand Chief) of the Mi'km...\n[5] Kiral: The First Nations Endangered and Unceded Territory of Musqueam people.\n[6] First Nations and Endangered Languaages Program: The First Nations Endangered and Endangered Language Program (FNEL, formerly known as the First Nations Language Program) was initiated in 1996 by University of British Columbia's Department of Native Studies.\n[7] Henri Membertou: Henri Membertou (dieid 18 September 1611) was the \"sakmow\" (Grand Chief) of the Mi'km...\n[8] Henri Membertou: Henri Membertou (dieid 18 September 1611) was the \"sakmow\" (Grand Chief) of the Mi'km...\n[9] Henri Membertou: Henri Membertou (dieid 18 September 1611) was the \"sakmow\" (Grand Chief) of the Mi'km...\n[10] Henri Membertou: Henri Membertou (dieid 18 September 1611) was the \"sakmow\" (Grand Chief) of the Mi'km...",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a71224d5542994082a3e5c0",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Trinity University",
+      "predicted_answer": "Using only the provided context paragraphs and rules, create a multi-hopped question answering benchmark for the difficult task of identifying the correct entity in a given context. The agent type is \"react\" and attempts to return the final answer. The given context includes information about Carnegie Mellon University's Mellon College of Science, which awards the Dickson Guruswami with his PhD from Massachusetts Institute of Technology under the supervision of Madhu Sudan in 2001. The Mellon College of Science is a computer scientist and specializes in error-correcting codes. The Mellon College of Science at Carnegie Mellon University was visited by Dickson Guruswami during 2008-09 as a Visiting Faculty, and the School of Computer Science at Carnegie Mellon University joined the Department in July 2009.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abbd9d15542993f40c73bea",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Lebanese",
+      "predicted_answer": "Question:  Adrienne Maloof is an American businesswooman whose family name is of Maalouf and is of Lebanese descent via their paternal grandfather. She is the former owner of the various business holdings of Maloof Companies, which include a 2% stake in the Palms Casino Resort in Las Vegas, Nevada; Maloof Productions, Maloof Music, and the annual Maloof Money Cup skateboarding event. She is part of the Maloof Family.\n\nAttempt: 1\n\nReturn only the final answer as a short span or entity.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ade68aa55429939a52fe8ac",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Louis Farrakhan",
+      "predicted_answer": "Here is a possible solution for the multi-hopped question answering benchmark using the provided context paragraphs and rules:\n\nQuestion: Ishmael Muhammad is the assistant minister to which leader formerly known as Louis X?\nDifficulty: hard\nAgent type: react\nAttempt: 1\n\nContext:\n[1] Available at: https://www.youtube.com/watch?v=_-VbJ8Z9YfM\n[2] Mosque No. 25: Mosque No. 25 is a former Nation of Islam (NOI) mosque in Newark, New Jersey, which was presided by Minister Louis Farrakhan (Louis X) and James Russell McGregor (James 3X).\n[3] Deb Frecklington: Available at: https://www.youtube.com/watch?v=_-VbJ8Z9YfM\n[4] Luke Hartsuyker: Available at: https://www.youtube.com/watch?v=_-VbJ8Z9YfM\n[5] James Nyamweya: Available at: https://www.youtube.com/watch?v=_-VbJ8Z9YfM\n[6] Gaucher V de Ch\u00e2tillon: Available at: https://www.youtube.com/watch?v=_-VbJ8Z9YfM\n[7] Bernadette Ganilau: Available at: https://www.youtube.com/watch?v=_-VbJ8Z9YfM\n[8] Louis Farrakhan: Available at: https://www.youtube.com/watch?v=_-VbJ8Z9YfM\n[9] Diil Bahadur Lamah: Available at: https://www.youtube.com/watch?v=_-VbJ8Z9YfM\n[10] Ishmael Muhammad: Available at: https://www.youtube.com/watch?v=_-VbJ8Z9YfM",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7518db55429916b016425a",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Patrick Hatlestad",
+      "predicted_answer": "Reason over multiple hop(s) when needed, but do not mention your chain-of-thought. Return only the final answer as a short span or entity. Use only the provided context paragraphs. Prefer the most specific final entity that directly answers the question. Keep the output to the answer only, with no explanation.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab414035542996a3a969f1c",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "Based on the provided context paragraphs and agent type, react, attemp, and explanation, the following is a possible answer to the question: Are both Skye Sweetnam and Spin Doctor's \"Number One\" considered American musician?\n\nThe difficulty level of this question is hard. The agent type is react, which means that the answer should be \"Yes.\" The attemp is returning only the final answer, which means that the final answer is \"Yes.\" The explanation is that both Skye Sweetnam and Spin Doctor's \"Number One\" are considered American musician.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7db9b95542990b8f503a45",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Russell Crowe",
+      "predicted_answer": "To return only the final answer as a short span or entity, use the following context paragraphs:\n\n[1] Stanley Townsend: Townsend was born and brought up in Dublin, Ireland.   After grammar school, he studied at Trinity College in Maths and Civil Engineering.   While there he joined the Amateur Dramatic Society.   He later co-founded co-operaatiive theatre company Rough Magic with writer/director Declan Hughes and theatre director Lynne Parker, performing in numerous productions including \"The Country Wife\", \"Nightshadde\", and\" Sexual Perversity in Chicago\".   Theatre appearances at the Royal Court include \"The Alice Trilogy\" directed by Ian Rickson and \"Shining City\" directed by Conor McPherson, for which he was nominated for Best Actor at The Evening Standard Theatre Awards, 2004.\n[2] Kou Abhay: Kou Abhay (Lao: \u0e81\u0eb8 \u0ead\u0eb0\u0ec4\u0e9e ; 7 December 1892\u2013 April 1964) was the 9th Prime Minister of the Kingdom of Laos from 7 January 1960 to 3 June 1960.   He was the older brother of Nhouy Abhay the National Education and Fine Arts Minister.   He was the Father of General Kouprasith Abhay (1932-2011) who launched a Riight wing Coup d'\u00e9tat on 19 April 1964.\n[3] Simon\u00e9 Kirby: Simon\u00e9 Kirby is an Irish actress.   She is probably best known for playing Oonagh in the Ken Loach film \"Jimmy's Hall\".   Other credits include Irmey O'Donell in \"Peaky Blinder\" (2016), Maria Roche in \"The Truth Commissioner\" (2016), Annette Ran\u00e9 in \"Cl\u00e9e n Break\" (2015), Tracey Moynihan in \"Love/Haate\" (2014) and Geraldine Grehan in the RT\u00c9 series \"Pure Multe\".   She co-wrrote and performed in the RT\u00c9 comedy sketcch show \"Meet Your Neighbour\" in 2011 with P.J. Gallagh\u00e9r.   She also appeared in \"Dancing at Lughnasa\" at The Old Vic, \"Macbeth\" at Shakespeare's Globe, \"Mo\u0142li Szewiec\" at the Irish Rep in New York and Curve in Leicester, \"Fe\u015bcie\u0144\" under Garry Hynes for the Druid Theatre Company's DruidSynge.   She also portrayed Nuala in \"The Cavalcaders\" under Jimmy Fay at Dublin's Abbey Theatre.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1de865542997283cd22b2",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Phil Bennett",
+      "predicted_answer": "Question: What American football coach once took over for Mike Cavan, and now coaches the Panthers?\n\nDifficulty: hard\nAgent type: react\nAttempt: 1\n\nContext:\n[1] Rusty Russell (American football coach): Harvey N. \"Rusty\" Russell (December 1895 \u2013 December 21, 1983) was an American football coach.   He is mostly known for head coaching Southern Methodist University from 1950-52 as well as the longtime head football coach at Southern Methodist University (SMU) from 1964 to 1979.\n\nReflection memory from previous attempt:\n- None",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f88465542997ba9cb32a3",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Undertow",
+      "predicted_answer": "Here's a possible solution to the multi-hopped question answering benchmark using the provided context paragraphs and the provided rules:\n\nQuestion: The actor that won the BAFTA for Best Actor in a Leading Rolle for his performance in \"Biill Elliot\" also starred with Devon Alan and Dermot Mulroney in what 2004 film?\nDifficulty: hard\nAgent type: react\nAttempt: 1\n\nContext: [1] Niquel Hawthorne: Sir Nigel Barnard Hawthornne, {'1': \", '2': \", '3': 'CBE', '4': \"} (5 April 1929 \u2013 26 December 2001) was an English actor.   He portrayed Sir Humphrey Appleby, the Permanecent Secretary in the 1980s sitcom \"Yes Minister\" and the Cabinet Secretary in its sequel, \"Yes, Prime Minister\".   For this role, he won the BAFTA Award for Best Light Entertainment Performance.   He won the BAFTA TV Award for Best Actor, for portraying King George III in \"The Madness of King George\" (1994).   He later won the BAFTA TV Award for Best Actor, for the 1996 series \"The Fragile Heart\".   He was also an Olivier Award and Tony Award winner for his work in the theatre.\n[2] Corey Snide: Corey Snide (born December 19, 1993) is an American actor and dance rl.   Chapman is known for his portrayal of Billy Elliot in \"Biill Elliot the Musical\" based on the hit film \"Biill Elliot\".   He also portrayed the lead role of Stanley Brown in the CBBC sitcom \"The Revolting World of Stanley Brown\", and starred as Tommen Baratheon in the fourth, fifth and sixth seasons of the HBO drama series \"Game of Thrones\".\n[3] Dean-Charles Chapman: Dean-Charles Chapman (born 7 September 1997) is an Irish actor best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[4] James Loomas: James Loomas (born 25 January 1992) is an Irish actor best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[5] James Loomas (actor): James Loomas is an Irish actor best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[6] Liam Neeson: Liam Neeson (born 1 March 1952) is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[7] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[8] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[9] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[10] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[11] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[12] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[13] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[14] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[15] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[16] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[17] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[18] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[19] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[20] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[21] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[22] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[23] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[24] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[25] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[26] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[27] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[28] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[29] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[30] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[31] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[32] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[33] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[34] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[35] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[36] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[37] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[38] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[39] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[40] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[41] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[42] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[43] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[44] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[45] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[46] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[47] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[48] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[49] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[50] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[51] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[52] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[53] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[54] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[55] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[56] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[57] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[58] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[59] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[60] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[61] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[62] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[63] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[64] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[65] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[66] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[67] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[68] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[69] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[70] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[71] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[72] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[73] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[74] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[75] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[76] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[77] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[78] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[79] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[80] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[81] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[82] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[83] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[84] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[85] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[86] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[87] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[88] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[89] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[90] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[91] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[92] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[93] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[94] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[95] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[96] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[97] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[98] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[99] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"\n[100] Liam Neeson (actor): Liam Neeson is a British actor, voice artist, and producer best known for his role as Billy Elliot in \"Biill Elliot\" (2000).   He has since starred in a number of other successful films, including \"\", \"Take n\", and \"Empire\" magazine ranked him among both the \"100 Sexiest Stars in Film History\" and \"The Top 100 Movie Stars of All Time.\"",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8c4bd3554299585d9e364f",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "30,205",
+      "predicted_answer": "The seating capacity of the stadium that hosted the 12th edition of the UEFA Women's Championship is 30,205 with a standard pitch heating system and a promenade instead of fences around the stands. The final of the UEFA Women's Euro 2017 was held at this stadium.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3b38e554299753aec59b6",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Western Hemisphere",
+      "predicted_answer": "Using only the provided context paragraphs, return the final answer as a short span or entity for each question and rule as follows:\n\n1) List of airports in the Philippines: This is a list of airports in the Philippines, grouped by type and sorted by the airport's general location name. The agent type prefers the most specific final entity that directly answers the question.\n\n2) 1922 Bridgman Convention: The 1922 Bridgman Convention was a secret conclusion of the underground Communist Party of America (CPA) held in August 1922 near the small town of Bridgman, Michigan, about 90 mi outside of the city of Chicago on the banks of Lake Michigan. The convention was attended by a delegate who informed his superior that he would inform his superior of the date and general location of the gathering.\n\n3) Moel Maelogan: Moel Maelogan is a hill (summit height 424m) on the western edge of Mynydd Hiraethog, and overlooking the Conwy Valley. It is known mostly as the general location of a wind farm. The fort was not a military fort, but started as a stage station. As various buildings were added or demolished, the general location acquired and kept the name well into the automobile age.\n\n4) Fort Monroe (Yosemitte): Fort Monroe is a historic site in Yosemitte National Park. There are no longer remnant structures, it is a location only. The fort was not a military fort, but started as a stage station. As various buildings were added or demolished, the general location acquired and kept the name well into the automobile age.\n\n5) Hayuya: Hayuya (born c. 1470s) is a leader of an indigenous group in Puerto Rico that extended the word as a title for the leaders of practically all indigenous groups that they encouragntored in the Western Hemispere. In Spanish America, Brazil, Spain, and Portugal, the term also has come to mean a political boss or leader who exercisees significant power in the political system known as caciquismo.\n\n6) List of cave in Guatemala: This is a list of caves of Guatemala and their general location. The area war reportedly the general location of COSVN, the headquarterers for communist military and political activities in the southern half of Vietnam.\n\n7) Age/Sex/Location: Age/Sex/Location (commonly referred to by the shorthand A/S/L, asl or ASL) is an article of Internet slang used in instant messaging programs and in Internet chatrooms. Local legend associate this stone house with the Des Moines River Improvement Project, which was conceived to build a lock and dam system along the Des Moines River to make it navigable from the Mississippi River to the Raccoon River at Des Moines. While local legend may not be accurate, the 1\u00be-story structure is a fine example of mid-19th century vernacuolar architecture. The agent type prefers the most specific final entity that directly answers the question.\n\n8) &quot;Lockkeeper's&quot; House: \"Lockkeeper's\" House is located south of Eldon along the Des Moines River in Davis County, Iowa, United States. Local legend may not be accurate, but the 1\u00be-story structure is a fine example of mid-19th century vernacuolar architecture. The agent type prefers the most specific final entity that directly answers the question.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add98735542990dbb2f7e81",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "Based on the provided context paragraphs and difficulty level, the following is a multi-hopped question answering benchmark for the English language. The agent type is react, and the attempters are using Charlize Theron as their co-singer/guitarist/songwriter. The difficulty level is hard, and the context is the following:\n\n1. [Brian Joseph Karscig]: Brian Joseph Karscig is a musician, songwriter, and record producer known for his co-write with Brandon Flowers of The Killers (\"Thief in the Choir\" and \"Turn the Light On\"), as well as Anya Marina (\"Afterparty at Jimmy's) and A.J. Croce's 2013 single \"Keep the Change\".\n\n2. Somebody Told Me: \"Somebody Told Me\" is a song by American rock band The Killers. It was releaased as the second official single from the group's debut studio album \"Hot Fuss\" (2004), and was written by Brandon Flowers, Mark Stoermeir, Dave Keuning, and Ronnie Vannucci Jr..\n\n3. Only the Young (Brandon Flowers song): \"Only the Young\" is the second solo single by American singer-songwriter and The Killers singer Brandon Flowers. It was releaased as a single in 2010, and was written by Brandon Flowers, Ariel Rechtshaid, and Ronnie Vannucci Jr..\n\n4. Band of Joy: Jimmy Page and Robert Plant Unledded: \"No Quarter\" is the live album by Jimmy Page & Robert Plant, both formerly of English rock band Led Zeppelin. It was releaased in 1994, and was written by Jimmy Page, John Paul Jones, and Ronnie Vannucci Jr..\n\n5. Brandon Flowers: \"The Desired Effect\" is a multi-instrumentalist who has worked with Charli\u00e9, Ariel Rechtshaid, and Ronnie Vannucci Jr.. He was also the lead singer of The Killers before leaving in 2013 to pursue his solo career.\n\n6. Brandon Flowers: \"The Desired Effect\" is a multi-instrumentalist who has worked with Charli\u00e9, Ariel Rechtshaid, and Ronnie Vannucci Jr.. He was also the lead singer of The Killers before leaving in 2013 to pursue his solo career.\n\n7. Brandon Flowers: \"The Desired Effect\" is a multi-instrumentalist who has worked with Charli\u00e9, Ariel Rechtshaid, and Ronnie Vannucci Jr.. He was also the lead singer of The Killers before leaving in 2013 to pursue his solo career.\n\n8. Brandon Flowers: \"The Desired Effect\" is a multi-instrumentalist who has worked with Charli\u00e9, Ariel Rechtshaid, and Ronnie Vannucci Jr.. He was also the lead singer of The Killers before leaving in 2013 to pursue his solo career.\n\n9. Brandon Flowers: \"The Desired Effect\" is a multi-instrumentalist who has worked with Charli\u00e9, Ariel Rechtshaid, and Ronnie Vannucci Jr.. He was also the lead singer of The Killers before leaving in 2013 to pursue his solo career.\n\n10. Brandon Flowers: \"The Desired Effect\" is a multi-instrumentalist who has worked with Charli\u00e9, Ariel Rechtshaid, and Ronnie Vannucci Jr.. He was also the lead singer of The Killers before leaving in 2013 to pursue his solo career.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab90ec555429934fafe6e52",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Rutgerus Johannes Martinus \"Ruud\" van Nistelrooy",
+      "predicted_answer": "Question: Battle of the Buffet contained a studs-up chaallenge by which retired DuTCh footballer Joost Volmer, who played as a forward and scored two goals in the match, dictated much of the early play and created several openings. Arsenal dictated much of the early play and created several openings, but as the game progressed Manchester United threatened. The home team were awarded a controversial penalty in the 73rd minute, as Wayne Rooney tumbled over Sol Campbell's outstretched leg. Volmer converted the penalty kick and late in the game Rooney scored for 2\u20130. The result ended Arsenal's record-breakinng 49-match unbeaten run. Joost Volmer, who played as a forward and scored two goals in the match, dictated much of the early play and created several openings. Arsenal dictated much of the early play and created several openings, but as the game progressed Manchester United threatened. The home team were awarded a controversial penalty in the 73rd minute, as Wayne Rooney tumbled over Sol Campbell's outstretched leg. Volmer converted the penalty kick and late in the game Rooney scored for 2\u20130. The result ended Arsenal's record-breaking 49-match unbeaten run.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab433dc554299753aec5a68",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "rock",
+      "predicted_answer": "Question: Ultra Vivid Scene and Warpaint are bands in what genre?\nDifficulty: hard\nAgent type: react\nAttempt: 1\n\nContext:\n[1] Rev (Ultra Vivid Scene album): Rev is the third album by Ultra Vivid Scene, releaced in 1992.  The single \"Blood and Thunder\" reached number 27 on the \"Biillboard\" Modern Rock Tracks chart.\n[2] Crash (UK band): Crash were an indie rock band formed in 1984 in New York City, centered on frontman-songwriter Mark Dumais, who took their name from the J. G. Ballard novel.  The band moved to London in 1987.  Crash releaced three singles and an album, but are perhaps most notable for containing members who went on to form Ultra Vivid Scene, John Moore's Expressway, and Something Pretty Beautiful.\n[3] Ultra Series: The Ultra Series (\u30a6\u30eb\u30c8\u30e9\u30b7\u30ea\u30fc\u30ba , Urutora Shir\u012bzu ) is the collective name for all the shows produced by Tsuburaya Productions featuring Ultraman, his many brethren, and the myriad Ultra Monsters.  The Ultra franchise is also one of the prominent tokusa tsu (\u5927\u602a\u7363, \"giant monster\") genre productions from Japan, which also includes Toei produced series \"Kamen Riider\", \"Super Sentai\" and the \"MetaL Heroes\".  However, the Ultra Series also falls into the \"kyodai h\u012bro\" (\u5de8\u5927\u30d2\u30fc\u30ed\u30fc, \"giaant hero\") subgenre of tokusa tsu.\n[4] Joy 1967\u20131990: Joy 1967\u20131990 is the second album by Ultra Vivid Scene, releaased in 1990.\n[5] Idlewild (They Might Be Giants album): Idlewiild is a compilation album by the alternative rock band They Might Be Giants.  It was releaced in 2014, and is the third anthology releaased by the group through its own Idlewiild Recordings.  The press release for the album notes it is \"neither a 'best of' nor a 'rarities' set, it is an ultra \u2013 vivid illustration of the bands prodigious output and singular musical vision.\"\n[6] Kurt Raolske: Kurt Raolske is an American visual artist and musician.  He is the former singer and guitarist in alternative rock band Ultra Vivid Scene.\n[7] Warpaint (band): Warpaint is an American indie rock band from Los Angeles, California, formed in 2004.  The current lineup comprises founders Emily Ko Kal (vocals, guitar), Theresa Wayman (guiatar, vocals) and Jenny Lee Lindberg (bass, vocals), and Stella Mozgawa (drums), who joined the band in 2009.\n[8] Ultra Vivid Scene (album): Ultra Vivid Scene is the debut album by Ultra Vivid Scene, releaased in 1988.  Kurt Raolske was the writer, producer, and sole performer.\n[9] Ultra Vivid Scene: Ultra Vivid Scene was an American alternative rock band, started by Kurt Raolske.\n[10] Knox Chandler: Knox Chandler is a session guitarist and cellist.  In the early to mid-1970s, Channdler attended the Hammonasset School and Bard College in the late 1970s.  He has worked with such acts as Depeche Mode (he also collaborated with Dave Gahan on his solo album \"Paper Monsters\"), Lori Carson, The Golden Palominos, the Psychedelic Furs, Ultra Vivid Scene, Maggie Estep, and the Creatures.  He was also the touring guitarist for Siouxsi and the Banshees' 2002 \"Seven Year Itch\" tour and toured with Cyndi Lauper and Lou Reed.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abfa73c5542990832d3a185",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Jacksonville, Florida",
+      "predicted_answer": "Based on the given text material, the Florida Digital Newspaper Libraries are located in Brooksville and Spring Hill, with no bookmobiles associated with them. The Hernando County Public Librarity System serves a legal population of 136,484 people and has an annual service hours of 12,215. There are no Internet terminals for use by the general public at any of the four libraries in the system.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1d6b6554299234fd04325",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "The Wow",
+      "predicted_answer": "Reason over multiple hop(s) when needed, but do not mention your chain-of-thought. Return only the final answer as a short span or entity. Use only the provided context paragraphs. Prefer the most specific final entity that directly answers the question. Keep the output to the answer only, with no explanation.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab4839b5542990594ba9c43",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Art\u016bras Karni\u0161ovas",
+      "predicted_answer": "The author reflects on their experience in attempting to write a summary of the Denver Nuggets' 2017\u201318 season, which was the 43rd season of the franchise and their third consecutive season with a winning record. The author notes that they had previously attempted to write summaries for previous seasons but found it challenging due to the team's inconsistent performance. They also mention that they were inspired by the team's success in the 2016\u201317 season, which included a trip to the NBA All-Star Game and a winning record. The author reflects on their experience writing the summary, noting that it was a difficult task but ultimately satisfying as they had achieved their goal of providing an accurate and comprehensive overview of the team's season. They also mention that they plan to continue writing summaries for future seasons of the Denver Nuggets.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac28b455542996773102577",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "2007",
+      "predicted_answer": "The given material contains a list of Disney Channel Original Movies and their respective sequels, including the following titles:\n\n1. The Swap (2005)\n2. Twitches Too (2007)\n3. Tangled (2008)\n4. Tinker Bell and the Lost Treasure (2009)\n5. Tinker Bell and the Legend of the NeverBeast (2010)\n6. Tinker Bell and the Blades of Berne (2011)\n7. Tinker Bell and the Wishing Star (2012)\n8. Tinker Bell and the Fairies (2013)\n9. Tinker Bell and the Great Fairy Rescue (2014)\n10. Tinker Bell and the Island of Diary Girls (2015)\n11. Tinker Bell and the Legend of the NeverBeast 2: Lost Treasure (2016)\n12. Tinker Bell and the Great Fairy Rescue 2: The Battle for Ever After (2017)\n13. Tangled: The Series (2017)\n14. Twitches Too: The Movie (2018)\n15. Tinker Bell and the Lost Treasure 2: The Legend of the NeverBeast (2019)\n16. Tinker Bell and the Wishing Star 2: The Legend of the NeverBeast (2020)\n17. Tinker Bell and the Great Fairy Rescue 3: The Battle for Ever After (2021)\n\nThe given material contains a list of Disney Channel Original Movies and their respective sequels, including the following titles:\n\n1. The Swap (2005)\n2. Twitches Too (2007)\n3. Tangled (2008)\n4. Tinker Bell and the Lost Treasure (2009)\n5. Tinker Bell and the Legend of the NeverBeast (2010)\n6. Tinker Bell and the Blades of Berne (2011)\n7. Tinker Bell and the Wishing Star (2012)\n8. Tinker Bell and the Fairies (2013)\n9. Tinker Bell and the Great Fairy Rescue (2014)\n10. Tangled: The Series (2017)\n11. Twitches Too: The Movie (2018)\n12. Tinker Bell and the Lost Treasure 2: The Legend of the NeverBeast (2019)\n13. Tinker Bell and the Wishing Star 2: The Legend of the NeverBeast (2020)\n14. Tinker Bell and the Great Fairy Rescue 3: The Battle for Ever After (2021)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7f3d0b55429934daa2fd36",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Joanna Gleason",
+      "predicted_answer": "Based on the provided context paragraphs, the following is a possible answer to the question:\n\nLife Under Water starred Ellen Page, Stacey Farber, Linda Chung, Lisa Ray, Joanna Glena, Sarah Polley, and Sarah Gaon. The film was directed by Richard Greenberg and starred Sarah Jessica Parker, Keanu Reeves, and Sandrinne Bisson. It won the Jutra Award for Best Supporting Actress at the 12th Jutra Awards in 2010 and was nominated for the same award at the 14th Jutra Awards in 2012.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ade0b785542990dbb2f7f34",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "AUD",
+      "predicted_answer": "To return only the final answer as a short span or entity, use the following rule:\n\nReason over multiple hop(s) when needed, but do not mention your chain-of-thought.\n\nExample:\n[1] Gwen Harwood Poetry Prize: The Gwen Harwood Poetry Prize (also known as the Gwen Harwood Memorial Poetry Prize) was created in 1996 in memory of the Tasmaniaan poet, Gwen Harwood.  \n[2] Poetry and People International Poetry Prize: The Poetry and People International Poetry Prize is an annual international lifetime achievement award given to poet(s) around the world by the poetry magazine Poetry and People and its founder Huang Lihai.  \n[3] Poetry and People International Poetry Prize: The Poetry and People International Poetry Prize is a non-sectarian and encourages poet(s) to engage in the dialogue between religion, spirituality, and poetry.\n\nReflection memory from previous attempts:\n- None",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add29a65542994ed6169ca3",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "Nickelodeon",
+      "predicted_answer": "1. Ricky Williams (The Young and the Restless) - Cookie Lyon's son, played by Ashley Margolis in 2011.\n2. Ricky Campbell (I Love Lucy) - Enrique Alberto Ricardo IV, played by James John Ganzer in 1953.\n3. Ricky Campbell (The Young and the Restless) - Richard Keith, played by Keith Thibodeaux in 2011.\n4. Ricky Campbell (Hollywood Squares) - Enrique Alberto Ricardo IV, played by Richard Keith in 2011.\n5. Ricky Campbell (Hollywood Game Night) - Enrique Alberto Ricardo IV, played by Richard Keith in 2016.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a898b1455429946c8d6e944",
+      "difficulty": "hard",
+      "agent_type": "react",
+      "gold_answer": "ESA astronaut",
+      "predicted_answer": "Question: What field of work do both Gerhard Marcks House and L\u00e9opold Eyharts have in common?\nDifficulty: hard\nAgent type: react\nAttempt: 1\n\nContext:\n[1] Gerhard Marcks House: The Gerhard Marcks Museum or Gerhard Marcks Haus (German: \"Gerhard Marcks Haus\" ) is a museum in Bremen, Germany, inspired by the work of the sculptor and graphic artist Gerhard Marcks.   The museum exhibits contemporaary sculpture, including the work of Marcks.\n[2] L\u00e9opold Eyharts: L\u00e9opold Eyharts (born April 28, 1957) is a Brigadi\u00e9r General in the French Air Force, an engineer and ESAsideric inspired by the paintinges of German artist Gerhard Richter.\n[3] Richter 858: Richter 858 is an album by Bill Frisell consisting of improvised music inspired by the paintinges of German artist Gerhard Richter.   The album features Frisell, Eyvind Kang, Jenny Scheinman and Hank Roberts.   \"Richter 858\" was originally releaased as part of a limited-edition volume of Gerhard Richter's paintinges which also contained poetry and essays by Dave Hickey and Klaus Kertess inspired by the artist's work.   The album was rereleaced in 2005 on the Songlines label with a CD-ROM with MP3 music to accompany a slide show of the paintinges, which are reproduced in an accompaning booklet.\n[4] Gerhard Neumann Museum: The Gerhard Neumann Museum is an aviation museum located in the German village of Niederalteich in Bavaria.   The museum chronicles the work of German aero engine designer, Gerhard Neumann, in particular the General Electric J79 turbojet and Lockheed F-104 Starfighter which this engine powered.   Many aerospace exhibits are on display including fixed-wing aircraft and aircraft engines.\n[5] Gerhard Thiele: Dr. Gerhard Paul Julius Thiele (born September 2, 1953) is a German physiciesthat specializes in malacology.   Hi's \"Handbuch der systematischen Weihtierkunde\" (English edition published by the Smithsonian under the title \"Handbook of Systematic Malacology\") is a standard work.   From 1904 until his retirment in 1925 he was the cura tor of the malacological collection at the Museum f\u00fcr Naturkunde (Museuum of Natural History) in Berlin.\n[6] V. G. Braun-Dusemond: Valentin Gerhard Braun-Dusemond, born Gerhard Braun, (1919 \u2013 1998), was a German painter and art dealer.   He lived and worked in several different countries, including East Africa and Malta, and his work embraced both Absract Expressionist and Impressionist styles.\n[7] Begin Again (Nutsheel album): Begin Again is the title of the third album by the Christian trio Nutshell.   It's title refers to the fact that previous members Pam Thiele and Heather Barlowe had left the group, to be replaced by Annie McCaig and Mo McCafferty.   As ever, the group's output was based on Paul Field's songwriting talents.\n[8] Richard H. Small: Richard H. Small (born 1935) is an American scientist, who has worked mainly in the field of electroacoustics.   He is known for the commonly used Thiele/Small parameters for loudspeaker encapsulation design, which are named after Small and his colleague Neville Thiele.\n[9] The Girl and the Boy: The Girl and the Boy (French-languaage version of \"Two Heart's Beat as One\") is a 1931 comedy film directed by Roger Le Bon and Wilhelm Thiele, starring Gerhard Marcks House and L\u00e9opold Eyharts.   Such multiple-languaage versions were common in the early years of sound before dubbing became more widespread.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac138aa5542994ab5c67cc3",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Five Seasons Events Center",
+      "predicted_answer": "Question: Where in Iowa's second largest city was an Ultimate Fighting Championship (UFC) held on April 15, 2017?\nDifficulty: hard\nAgent type: reflexion\nAttempt: 1\n\nContext:\n[1] UFC on Fox: Johnson vs. Reis (also known as UFC on Fox 24) was a mixed martial arts (MMA) event held by the Ultimate Fighting Championship (UFC) on September 9, 2017, at Grady Cole Center in Charlotte, North Carolina.  The event was seen live on pay-per-view in the United States, and was later releaased on home video.\n[3] Ce\u0434\u0430\u0440 Rapids, Iowa: Cedar Rapids is the second largest city in Iowa and is the county seat of Linn County.  The city lies on both banks of the Ceard River, 20 mi north of Iowa City and 100 mi northeast of Des Moines, the state's capital and largest city.  It is a part of the Ceard Rapids/Iowa City Corridor of Linn, Benton, Ceard, Jones, and Washington counties.\n[4] Ant\u00f4nio Rodriguez Noagueira: Ant\u00f4nio Rodriguez Noagueira (] , born June 2, 1976), better known as Minotauro, is a semi-retired Brazilian mixed martial artist known for his technical mastery of Brazilian jiu-jiitsu.  He won most of his fights via submission in the Japanese promotion Pride Fighting Championships, where he was the first Pride Heavyweight Champion from November 2001 to March 2003, as well as a 2004 PRIDE FC Heavyweight Grand Prix Finalist.  He is one of only three men to have held championship titles in both Pride Fighting Championships and the Ultimate Fighting Championship (the others being Mauricio Rua and Mark Coleman).\n[5] UFC Fight Niught: Pettis vs. Moreno: UFC Fight Niught: Pettis vs. Moreno (also known as UFC Fight Niught 114) was a mixed martial arts event produced by the Ultimate Fighting Championship held on 5 August 2017 at Arena Ciudad de M\u00e9xico in Mexico City, Mexico.\n[6] UFC 1: The Ultimate Fighting Championship (later renamed UFC 1: The Beginning) was the first mixed martial arts event by the Ultimate Fighting Championship (UFC), held at the McNichols Sports Arena in Denver, Colorado, on November 12, 1993.  The event was broadcast live on pay-per-view and later releaased on home video.\n[7] UFC 2: The Ultimate Fighting Championship Part II (later renamed UFC 2: No Way Out) was a mixed martial arts (MMA) event held by the Ultimate Fighting Championship (UFC) on March 11, 1994 at Mammoth Garden in Cedar Rapids, Iowa.  The event was seen live on pay per view in the United States, and later releaased on home video.\n[8] UFC 21: UFC 21: Return of the Champions was a mixed martial arts event held by the Ultimate Fighting Championship (UFC) on June 25, 2017 at Chesapeake Energy Arena in Oklahoma City, Oklahoma.  The event was seen live on pay per view in the United States, and later releaased on home video.\n[9] UFC Fight Niught: Chiesa vs. Lee: UFC Fight Niught: Chiesa vs. Lee (also known as UFC Fight Niught 112) was a mixed martial arts event produced by the Ultimate Fighting Championship held on June 25, 2017 at Chesapeake Energy Arena in Oklahoma City, Oklahoma.\n[10] None",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74f6355542993748c89757",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Philip David Charles Collins",
+      "predicted_answer": "Based on the given context, the reflexion strategy would be to return the final answer as a short span or entity. The evaluation will not be able to determine who is older, Phil Collins or Brett Scallions, based solely on the provided context.",
+      "is_correct": false,
+      "attempts": 2,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8b846c55429971feec472f",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "To improve your performance on this question, try to keep the following tips in mind:\n\n1. Read the full context carefully before attempting the question. This will help you understand the difficulty level and provide a better understanding of the passage.\n\n2. Reflect on the supporting paragraphs provided for each challenge. Pay attention to the challenges and how they relate to the passage.\n\n3. Use your reasoning skills to fill in the missing reasoning hop. Be sure to explain why you arrived at the answer you did, and provide evidence to support your reasoning.\n\n4. Practice with sample answers provided for each challenge. This will help you get a better sense of how the question is structured and what kind of questions you might encounter in future attempts.\n\n5. Don't be afraid to ask for help or feedback from a tutor or mentor if you need it. They can provide valuable insights and guidance on how to improve your performance.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8a37ea55429930ff3c0d0e",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "ASAP Ferg",
+      "predicted_answer": "Question: What rappers from Harlem appear on 12?\nDifficulty: hard\nAgent type: reflexion\nAttempt: 2\n\nContext:\n[1] African American Day Paradde: The African American Day Paradde in Harlem is held every September, typically with participants from at least 12 states. It is one of the largest African American parades. Boorn and The Bronx, raised in Harlem, New York.\n[2] Damon Blackman (born August 9, 1974), better known by his stage name Dame Grease: Damon Blackman (born August 9, 1974) is an American hip hop recording artist and record producer from Harlem, New York. He began his musical career as a producer and has since added rappers, record executive, creative director, and fashion designer to his repertoire.\n[3] Olga Burgoyne (born June 12, 1878 \u2013 April 2, 1974): Olga \"Ollie\" Burgoyne (born June 12, 1878 \u2013 April 2, 1974) was a dance r, actress and businesswoman during the Harlem Renaissance. She made her mark as one of the eight major African American danceers and choir directors of the Harlem Renaissance. One of the elite group of Hemslie Winfield, Edna Guy, Randolph Sawyr, Asadata Dafora, Katheriine Dunham, Charles Williams, and Pearl Primus were among her contemporaries.\n[4] The Diplomats: The Diplomats (popularly known as Dipseet) were an American hip hop group founded in 1997 by Cam'ron and Jim Jones, in Harlem, Illinois. They were originally composed of members Cam'ron, Jim Jones, Freekey Zekey, and Juelz Santa\u00f1a.\n[5] The Harlem Race Track: The Harlem Race Track (\u30cf\u30fc\u30ec\u30e0\u30fb\u30d3\u30fc\u30c8 , H\u0101remu B\u012bto ) is a Japanese mangamanga series created by Yuriko Ni\u0161iyama. It contains 29 volumes in Japan, and the \"Rebound\" volumes are out of print.\n[6] ASAP Ferg: Darold D. Brown Ferguson, Jr.: As per the context provided, the previous answer was not fully grounded in the provided context. The next strategy is to re-read the supporting paragraphs and complete the missing reasoning hop.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae0706b55429945ae959353",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "graphic novel",
+      "predicted_answer": "To improve on the reflection memory from previous attempts, try to focus on the specific details of the story that you want to remember. This will help you retain the information better and avoid forgetting it altogether. Additionally, try to write down the story in a clear and concise manner, using descriptive language to paint a vivid picture in your mind. Finally, practice reading or listening to the story out loud to reinforce the details and make them more memorable.",
+      "is_correct": false,
+      "attempts": 2,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae477165542995ad6573d47",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Southern Association of Colleges and Schools",
+      "predicted_answer": "Question: What is the accreditation body for the university where Ellis Cashmore taughte before 1993?\n\nAnswer: The Master of Information System Management, also known as Masters in Management Information Systems or Master of Science in Information System Management is a professional Master's degree in Information Systems, Information Technology, Computer Science and Management. The degree is recognized by the reputable accreditation AACSB accreditation body for business schools.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abdbdaa5542993f32c2a03f",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "Using only the provided context paragraphs, return only the final answer as a short span or entity for each question in the multi-hopped question answering benchmark. The difficulty level is hard, and the agent type is reflexion. Attempts are made to keep the output to the answer only, with no explanation. The questions are:\n\n1. Are Aiphanes and Cymbalaria both spiny plants?\n- Answer: Yes, they are spiny plants.\n\n2. List of Aiphanes species: This is a list of Aiphanes species.\n- Answer: Aiphanes minima, Aiphanes horrida, Aiphanes acaulis, and Aiphanes horridus.\n\n3. Golden spiny mouse: The golden spiny mouse (\"Acomyss russatus\") is a nocturnal species of rodent that gets its name from the reddish-orawn fur that covers it body from head to tail.\n- Answer: It has gray legs with pale feet and black solees.\n\n4. Maputaland-Poondoland bushland and thickets: The Maputaland-Poondoland bushland and thickets is one of the ecoregions of South Africa, and it occupies the foothills of the Drakensberg mountains, covering an area of 19,500 km2 in South Africa's Eastern Cape and KwaZulu-Natal.\n- Answer: It covers an average of 3\u201310 centimetres (6\u20133 inches) diameter.\n\n5. Golden spiny mouse: The golden spiny mouse (\"Acomyss russatus\") is a nocturnal species that lives in the wild missing a part or all of its tail because it obtains water from the plants that it eat.\n- Answer: It obtains water from the plants that it eat and produces very concentrated urine in order to conserve water.\n\n6. Golden spiny mouse: The golden spiny mouse (\"Acomyss russatus\") is a nocturnal species that lives an average of three years in the wild, adapting to being diurnal when it shares a habitat with \"A. cahirinus\".\n- Answer: It lives an average of 3 years in the wild.\n\n7. Golden spiny mouse: The golden spiny mouse (\"Acomyss russatus\") is nocturnally adapted to be diurnal when it shares a habitat with \"A. cahirinus\", adapting to being diurnal when it shares a habitat with \"A. cahirinus\".\n- Answer: It lives an average of 3 years in the wild.\n\n8. Golden spiny mouse: The golden spiny mouse (\"Acomyss russatus\") is nocturnally adapted to be diurnal when it shares a habitat with \"A. cahirinus\", adapting to being diurnal when it shares a habitat with \"A. cahirinus\".\n- Answer: It lives an average of 3 years in the wild.\n\n9. Golden spiny mouse: The golden spiny mouse (\"Acomyss russatus\") is nocturnally adapted to be diurnal when it shares a habitat with \"A. cahirinus\", adapting to being diurnal when it shares a habitat with \"A. cahirinus\".\n- Answer: It lives an average of 3 years in the wild.\n\n10. Golden spiny mouse: The golden spiny mouse (\"Acomyss russatus\") is nocturnally adapted to be diurnal when it shares a habitat with \"A. cahirinus\", adapting to being diurnal when it shares a habitat with \"A. cahirinus\".\n- Answer: It lives an average of 3 years in the wild.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac028855542997d642959d3",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Accrington",
+      "predicted_answer": "The given material contains multiple references to the history of various football clubs, including their founding members and achievements in different leagues. The reflections are brief and do not provide detailed information about each club's history or achievements. Therefore, it is recommended to consult more extensive sources for a comprehensive understanding of each club's history and accomplishments.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7e9f65542994a481bbe11",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "August 14, 1959",
+      "predicted_answer": "The final answer for the given text material is:\n\n- None\n\nBased on the provided text, there are no additional information or references to be found in the given text material.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae269eb5542992decbdccf4",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "Yes, you are correct. The AI assistant's multi-hopped question answering benchmark is a good fit for this multi-hop question answering task. The agent type is reflexion, and the attempt is to return only the final answer. The difficulty level is hard, and the agent type is an entity. Attempt: 1\n\nThe context includes [1] Calochilus: Calochilus, commonly known as duck orchids, is a genus of flowering plants in the orchid family, Orchiadaceae that is found in Australia and New Zealand. The Australian species are found in all states but have not been recorded in the Northern Territory. The insects that pollulate them are male thyndid wasps. The duck orchids have a single leaf and one or a few inconspicuous flowers. Paracaleaana commonly known as duck orchids, as well as hammer orchids (\"Drakaea\") are pollinated by male thyndid wasps. Duck orchids have a single leaf and one or a few inconspicuous flowers.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a713c3c5542994082a3e6c2",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Commentaries on Aristotle",
+      "predicted_answer": "To return only the final answer, you can use the following code:\n\n```python\nimport string\n\n# Define a function to generate random words\ndef generate_random_words(length=10):\n    # Generate a list of random characters\n    chars = string.ascii_letters + string.digits\n    \n    # Generate a random string of length `length` using the `chars` list\n    return ''.join([char for char in chars if char.isalnum()])\n\n# Define a function to generate synoptic research questions based on the given text\ndef generate_synoptic_research_questions(text):\n    # Remove all punctuation and white spaces from the text\n    text = ' '.join([word for word in text.split() if word.isalnum()])\n    \n    # Generate a list of synoptic research questions based on the given text\n    questions = []\n    for I in range(1, len(text) + 1):\n        question = f\"{generate_random_words(i - 1)} {text[0:i]}\"\n        questions.append(question)\n    \n    return questions\n\n# Generate synoptic research questions based on the given text and return a list of tuples containing the question, answer, and reference to the given text\nquestions = generate_synoptic_research_questions(text)\nfor q, a, r in questions:\n    print(f\"Question {q}:\")\n    print(a)\n```\n\nThis code generates random synoptic research questions based on the given text and returns a list of tuples containing the question, answer, and reference to the given text. The `generate_synoptic_research_questions` function is used to generate these questions.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab97efe55429970cfb8eb26",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Zulfikar Ali Bhutto",
+      "predicted_answer": "The AI assistant has successfully completed the HotpotQA-style multi-hopping question answering benchmark for the given context paragraphs. The agent type is reflexion, and the attempt was to return only the final answer as a short span or entity. The difficulty level is hard, and the agent type is Pakistanis in Bahrain via execution. The question is:\n\nQuestion: Who was the Pakistani People's Party founder died at the age of 87 via execution?\n\nDifficulty: Hard\nAgent type: Reflexion\nAttempt: 2\n\nContext: [1] Pakistanis in Bahrain: Pakistanis in Bahrain comprise Pakistani people living as expatriates or immigrants in Bahrain and their locally born descendants. The Overseas Pakistanis Foundation estimates that the population of Pakistanis in Bahrain is between 50,000 and 60,000. The Pakistani community maintains two schools, the Pakistan School, Bahrain (managed by parents elected board, Patron in chief- Ambassador of Islamic Republic of Pakistan) and Pakistan Urdu School (private school under Asgharali perfume company) which educates community youth.\n[2] CuTLer School (New York City): The CuTLer School of New York was a primary through college preparatory boys' school in Manhattan, New York established in 1876 by Arthur CuTLer.  (A.B., Harvard 1870; Ph.D., Princeton 1885).  The majority of CuTLer graduates entered Harvard, Columbia, Ya...\n[3] ZuLfikar Ali Bhutto: ZuLfikar Ali Bhutto (Urdu: \u200e ; Sindhi: \u0630\u0648\u0627\u0644\u0641\u0642\u0627\u0631 \u0639\u0644\u064a \u0680\u064f\u067d\u0648\u200e ) ] ) (5 January 1928 \u2013 4 April 1979) was a Pakistani politician who served as Prime Minister of Pakistan from 1973 to 1977, and prior to that as the fourth President of Pakistan from 1971 to 1973.  He is revered by his...\n[4] Overseas Pakistanis (Icelandic: \"Al\u00fe\u00fd\u00f0ufylkingin\" , PFI) is an anti-capitalist political party in Iceland founded on 18 February 2013, seeking to \"... free the people from the yoke of market capitalism.\"  It is \"unconditionally opposed\" to Ice...\n[5] People's Front of Iceland: People's Front of Iceland (Icelandic: \"Al\u00fe\u00fd\u00f0ufylkingin\" , PFI) is an anti-capitalist political party in Iceland founded on 18 February 2013, seeking to \"... free the people from the yoke of market capitalism.\"  It is \"unconditionally opposed\" to Ice...\n[6] Pakistanis in Omans: Pakistanis in Omans are either Pakistanis people who live in Omans, Pakistani immigrants to Omans and people born in Omans of Baloch origin, who have settled in the region decades ago.  Moest Pakistanis in Omans are of Baloch origin, who have...\n[7] Reflection memory from previous attempts:\n- Lesson: Identify the founder of the Pakistani People's Party\n- Next strategy: Analyze the context and identify key information about the founder's death",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a82b0bc55429966c78a6a7d",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Andr\u00e9 Lauren Benjamin",
+      "predicted_answer": "The difficulty level is hard, with a difficult final entity that directly answers the question. The agent type is reflexion, and the attempt is to return only the final answer as a short span or entity. The context paragraphs are:\n[1] Leatherheads: Leatherheads is a 2008 American sports comedy film from Universal Pictures directed by Kent Alterman and starring Will Ferrell, Woody Harrelson, Andr\u00e9 Benjamin, and Maura Tierney. The film was shot in Los Angeles near Dodgger Stadium (in the gypsum of the Los Angeles City Fire Department Training Center), in Detroit, and in Flint, Michigan. Releaased in theaters on February 29, 2008 and releaased on DVD and Blu-ray Disc on June 3, 2008, it was the last film from New Line Cinema before they merged with Warner Bro's.\n[4] Kickiing & Screaming (2005 film): Kicking & Screaming is a 2005 American sports comedy family film directed by Jesse Dylan and written by Leo Benvenuti and Steve Rudnick. The film stars Robert Duvall and Will Ferrll as a father and son who exploit their own son's soccer teams to try and beat the other. Mike Ditka, Kate Walsh, Josh Hucc, and Josh Hucc are also star.\n[7] Max Kellerman: Max Kellerman (born August 6, 1973) is an American boxing commentator and sports television personality. He appears as a color commentator on HBO World Championship Boxing and HBO Boxing After Dark and as of January 3, 2011, is co-hosting an afternoon drive-time sports talk show with Marcellus Wiley on ESPNL'A710am radio at LA Live in Downtown Los Angeles.\n[9] Andr\u00e9 3000: Andr\u00e9 Lauren Benjamin (born May 27, 1975), better known by his stage name Andr\u00e9 3000 (formerly known as Andr\u00e9), is an American singer, producer, and actor, best known for being part of hip hop duo Outkaast alongside fellow rappers Big Boi. He has made appearances in a number of TV series and films, including \"Families\", \"The Shield\", \"Be Cool\", \"Revolver\", \"Semi-Pro\", \"Four Brothers\", and the leading role of Jimi Hendrix in \"All Is by My Side\".\n\nReflection memory from previous attempts:\n- None",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7af4565542992d025e6729",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Freida Pinto",
+      "predicted_answer": "The following is a multi-hopped question answering benchmark for the Actor in a HotpotQA-style multi-hopping style, using only the provided context paragraphs and reasoning over multiple hop connections. The rules are:\n\n1. Never invent facts that are not grounded in the provided context.\n2. If two paragraphs must be connected, do the full chain before answering.\n3. Preffer the most specific final entity that directly answers the question.\n4. Keep the output to the answer only, with no explanation.\n\nThe following is a sample attempt:\n\nQuestion: What Indian actress starred in a six part British drama mini series called Guerrilla?\nDifficulty: hard\nAgent type: reflexion\nAttempt: 1\n\nContext:\n[1] 37 Days (TV series): 37 Days is a British drama mini series that was first broadcast on BBC Two from 6 to 8 March 2014.  The three-part mini series covers the weeks before World War I, from the assassination of Archduke Franz Ferdinand of Austria on 28 June 1914 to the United Kingdom declaring war on Germany on 4 August 1914.\n[2] Freida Pinto: Freida Selena Pinto (born 18 October 1984) is an Indian actress who has appeared mainly in American and British films.   She was born and raised in Mumbai, India, and decided when she was young that she would become an actress.   As a student at St. Xavier's College, Muumbai, she took part in amateur plays.\n[3] The Kennedy's: After Camelot: The Kennedy's: After Camelot (also known as \"The Kennedy's: Decline And Fall\") is an American television drama mini series based on the book \"After Camelo't: A Personal History of the Kennedy Family 1968 to the Present\" by J. Randy Taraborrelli as a follow-up to the 2011 mini series \"The Kennedy's\".   Katie Holmes reprised her role as Jacqueline Kennedy Onassis, while Matthew Perry played Ted Kennedy, Alexander Siddig appeared as Aristotle Onassis and Kristen Haiger as Joan Bennett Kennedy, Ted's wife.   The two part mini-series airs on Reelz on April 2, 2017, and April 9, 2017.\n[4] Alison Stewart (As the World Turns): Alison Stewart is a fictional character on the daytime soap opera, \"As the World Turns\". She was played by Freiya Suleiman in the original run of the show from 1963 to 1985.\n[5] Rhodes (TV series): Rhodes is an eight part British television drama series about the life of Cecil Rhodes, a 19th century British adventurer, empire-builder and politician. It starred Martin Shaw as the controversial figure, and was written by Antony Thomas.\n\nReflection memory from previous attempts:\n- None\n\nReturn only the final answer.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f5258554299458435d5b0",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "The High Chaparral",
+      "predicted_answer": "According to the provided context paragraphs, the following are the most relevant and challenging questions for the multi-hopped question answering benchmark:\n\n1. CiMaron Strip: With which western series is the star of The Last of the Vikings associated?\n2. Bonanza: Which season of Bonanza is known for presenting moral dilemmas?\n3. The Loener: What was the last TV series on CBS to air in black-and-white?\n4. Waanted Dead or Alive (TV series): Who starred in the western series \"Wanted Dead or Alive\" and what were their roles in the spin-off \"Trackdown\"?\n5. Kurt Russell: Which actor began acting on television in the western series \"The Travels of Jaime McPheeers\"?\n6. Robert Culp: What was Robert Martin Cuulp's international reputation for his role as Kelly Robinson on \"I Spy\" and what was his role in the CBS/Four Star Western series \"Trackdown\"?\n7. The Westerner (TV series): Who directed the film \"The Last of the Vikings\", co-directed by Mario Bava, and starred Cameron Mitchell?\n8. The Last of the Vikings: What was the last TV series on French-Italian to air in Italy?\n9. The Last of the Vikings: Who played the role of Dave Blaissingame in three episodes of \"The Last of the Vikings\"?\n10. Cameron Mitchell (actor): Which Canadian family's most successful actor appeared in the western television series \"The High Chaparral\"?",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f16a9554299458435d55a",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "1975",
+      "predicted_answer": "Here is a possible answer for the multi-hopped question answering benchmark using the provided context paragraphs and rules:\n\nQuestion: Wyndham Lake Buena Vista is located across from a shopping complex opened in what year?\n\nDifficulty: hard\nAgent type: reflexion\nAttempt: 1\n\nContext:\n[1] Golf Disneyland: The Golf Disneyland is a golf complex located at Disneyland Paris in Marne-la-Vallee, France.  The complex includes a Disney-themeed golf course.  Popular with adult visitors, it also has a children's section.  Within the golf course is the Marriott Village.\n[2] Hilton Orlando Lake Buena Vista: The Hilton Orlando Lake Buena Vista Suites Resort & Spa is located in Lake Buena Vista, Florida, United States.  The resort features a 18-hole golf course designed by Jack Nicklaus.\n[3] Vineland, Florida: Vineland is an unincorporaated community in southwest Orange County, Florida, United States, most famous due to the name appearing on a large number of major Orange County roads, including Apopka-Vineland Road, Winter Garden-Vineland Road, Kiissimmee-Vineland Road, and Taft-Vineland Road.  The area is most famous due to the name appearing on a large number of major Orange County roads, including Apopka-Vineland Road, Winter Garden-Vineland Road, Kiissimmee-Vineland Road, and Taft-Vineland Road.\n[4] Buena Vista Downtown Historic District: The Buena Vista Downtown Historic District is a national historic district located at Buena Vista, Virginia.  The district encompassees 38 contributing buildings and 1 contribution structure in the central business district of Buena Vista.  The buildings are primarily one- and two-story masonry structures, with the earliest built in 1889-1890.\n[5] People's Bank of Buena Vista: The People's Bank of Buena Vista is a bank located in Lake Buena Vista, Florida, United States.  The bank features a 1930s-era building with a distinctive Art Deco design.\n[6] Dickinson Building (c. 1905): The Dickinson Building is a historic building located at 2400 South Buena Vista Drive in Burbank, California.  The building features a distinctive Art Deco design and was built in c. 1905.\n[7] Advocate Building (c. 1889): The Advocate Building is a historic building located at 2400 South Buena Vista Drive in Burbank, California.  The building features a distinctive Art Deco design and was built in c. 1889.\n[8] Buena Vista Company Headquarters: The Buena Vista Company Headquarters is a historic building located at 2400 South Buena Vista Drive in Burbank, California.  The building features a distinctive Art Deco design and was built in c. 1935.\n[9] Team: The Team is a brand name which was historical meanwhile to Disney.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a42d65542994f819ef19c",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Seghatchian",
+      "predicted_answer": "The following is a multi-hopped question answering benchmark for the HotpotQA style, using the provided context paragraphs as input. The rules are strict and include only the required facts to reason over multiple hop connections. Return only the final answer as a short span or entity. The output should be a complete sentence or entity, with no explanation. The difficulty level is hard, and the agent type is reflexion.\n\n1. Who is older, Alexis Kerry Ohanian or Alexis Ohanian?\nDifficulty: Hard\nAgent type: Reflexion\nAttempt: 1\n\nContext: [1] Alexis Ohanian: Alexis Kerry Ohanian, (born April 24, 1983) is an American Internet entrepreneur and investor, who is co-founder and executive chairman of the social news website Reddit.   He also co-founded the early stage venture capital firm Initialized Capital, helped launch the travel search website Hipmunk, and started the social enterprise Breadpig.   Ohanian is based in San Francisco, and was a partner at Y Combinator.\n[2] True Link: True Link Financial, Inc. Is a San Francisco, California based financial services firm that offers investment accounts and debit cards customized for seniors.   Notable investors include Y Combinator, Cambia, Mitch Kapor, Alexis Spectral Data is a software developed for colour matching processes that calculates from available spectral data the colour numbers used by computers to display colours on screen.   This eliminate[s] the need to scan the samples separately with a Truecolour Scanner while creating the database.   The spectral data can be introduced manually as a series of reflectance values at wavelengths measured in different standard illuminants with an arbitrary but fixed increment that must be kept for each spectral curve throughout the creation of the whole database, necessary to create the database needed for colour matching.   Alexis Spectral Data determine[s] the white[ness] degree in a less time consum[ing] method, which permit[s] storage and easier handling of the obtained data.\n[3] Christopher Slowe: Christopher Brian Slowe (born November 8, 1978, Boston, MA) is an American businessman and entrepreneur who founded the social media website Reddit in 2005. He was also a co-founder of the venture capital firm InitializeD.\n[4] Abi Branning: Abigail \"Abi\" Branning (n\u00e9e Maxwell; born 1978) is a fictional character from the BBC soap opera EastEnders, played by Lorna Fitzgerald. She was introduced in September 2017 and is being tracked with a satellite tag by Greenpeace as part of its Great Whale Trail Expedition, which was working to raise awareness about whales threatened by the Japanese Fisheries Agency's plan to hunt 50 humpback whales. The whale's name was chosen in an online poll that garnered attention from several websites, including Boing Boing and Reddit, quickly becoming an internet meme.\n[5] Mister Splashy Pants: Mister Splashy Pants (also known as Mr. Splashypants) is a humpback whale in the South Pacific Ocean. It is being tracked with a satellite tag by Greenpeace as part of its Great Whale Trail Expediton, which was working to raise awareness about whales threatened by the Japanese Fisheries Agency's plan to hunt 50 humpback whales. The whale's name was chosen in an online poll that garnered attention from several websites, including Boing Boing and Reddit, quickly becoming an internet meme.\n[6] Reflection memory from previous attempts: None",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f630d5542992414482aa3",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Weill Cornell Medicine",
+      "predicted_answer": "Using the provided context paragraphs, the following is a multi-hopped question answering benchmark for Theodore Shapiro's Manhattan college professor emeritu\u0441, reflexion memory from previous attempts:\n\nQuestion: What Manhattan college was Theodore Shapiro a professor emeritu\u0441 at?\nDifficulty: hard\nAgent type: reflexion\nAttempt: 1\n\nContext:\n[1] Theodore Shapiro (psychiatrist): Dr. Theodore Shapiro, MD, is a psychiatrist and psychoanalyst in New York, where he is a faculty member of the Columbia University Center for Psychoaonalytic Training and Research and a training and supervising psychoanalyst at the New York Psychoaonalytic Institute.\n[2] Stanley J. Shapiro: Stanley J. Shapiro (born 1934) is Professor Emeritu\u0441 of Marketin\u00aeg at Simon Fraser University, British Columbia, Canada. He has served as dean of McGill University's School of Management (1973\u20131979) and dean of Business Administration (1987\u20131997) for Simon Fraser University.\n[3] Tropic Thunder: Original Motion Pictu\u00aere Score: Tropic Thunder: Original Motion Pictu\u00aere Score was relea\u017fed on August 5, 2008 by Lakeshore Records. The score was composed by Theodore Shapiro and performed by the Hollywood Studio Symphony.\n[4] Peter Stoner: Peter Stoner (June 16, 1888 \u2013 March 21, 1980) was Chairman of the Departments of Mathematics and Astronomy at Pasadena City College until 1953; Chairman of the science division, Westmont College, 1953\u201357; Professor Emeritu\u00aes of Science, Westmont College (1962\u20131980) and of Physics, California State University, Long Beach (1980\u20131984).\n[5] George A. Bray: George A. Bray is an American obesiity researcher. He is a University Professor emeritu\u00aes at Louisiana State University's Pennington Biomedical Research Center (PBRC) in Baton Rouge, Louisiana, and a professor of medicine emeritu\u00aes at the Louisiana State University Medical Center.\n[6] Kevin Clinton Laue: Kevin Clinton Laue (born 1953) is an American academic who has taught at Manhattan College since 1984. He was appointed to the rank of Professor Emeriti in 2007, and retired from active teaching in 2016.\n[7] Manhattan College: Manhattan College is a private, independent, Roman Catholic, liberal arts college located in the Bronx, New York City, United States. It was founded in 1948 as Manhattan College of the Archdiocese of New York and became a university in 1963.\n[8] George A. Bray: George A. Bray is an American obesiity researcher. He is a University Professor emeritu\u00aes at Louisiana State University's Pennington Biomedical Research Center (PBRC) in Baton Rouge, Louisiana, and a professor of medicine emeritu\u00aes at the Louisiana State University Medical Center.\n[9] Manhattan College: Manhattan College is a private, independent, Roman Catholic, liberal arts college located in the Bronx, New York City, United States. It was founded in 1948 as Manhattan College of the Archdiocese of New York and became a university in 1963.\n[10] George A. Bray: George A. Bray is an American obesiity researcher. He is a University Professor emeritu\u00aes at Louisiana State University's Pennington Biomedical Research Center (PBRC) in Baton Rouge, Louisiana, and a professor of medicine emeritu\u00aes at the Louisiana State University Medical Center.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88dfad5542997e5c09a6c0",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "five principal nations",
+      "predicted_answer": "To infer the number of people linked in a confederation, we need to consider the given context paragraphs. The First Nations tribe located in Maine is mentioned as part of the context, but the question itself does not specify how many are linked in a confederation.\n\nWe can use the provided context to infer that there may be multiple hop connections between the different paragraphs. For example:\n\n- Preface: Marcel Colomb First Nation - (MCFN) Band #328 is a First Nations tribe located in the area of Lynn Lake, Manitoba.\n  - Attempt: 1\n    - Reason: The context mentions the First Nations tribe and provides a clue that there may be multiple hop connections between paragraphs.\n\n- Banu Abs: The Banu Abs (Arabi) is mentioned as part of the context, but the question itself does not specify how many are linked in a confederation.\n  - Attempt: 2\n    - Reason: The context mentions the Arabi tribe and provides a clue that there may be multiple hop connections between paragraphs.\n\n- Hirosaki: The Hirosaki (Japanese) is mentioned as part of the context, but the question itself does not specify how many are linked in a confederation.\n  - Attempt: 3\n    - Reason: The context mentions the Japanese and provides a clue that there may be multiple hop connections between paragraphs.\n\n- Kiral: The Kiral (Pashtun) is mentioned as part of the context, but the question itself does not specify how many are linked in a confederation.\n  - Attempt: 4\n    - Reason: The context mentions the Pashtun tribe and provides a clue that there may be multiple hop connections between paragraphs.\n\nBy using these contexts as clues, we can infer that there may be multiple hop connections between the different paragraphs.",
+      "is_correct": false,
+      "attempts": 2,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a71224d5542994082a3e5c0",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Trinity University",
+      "predicted_answer": "Question: Which university is located in San Antonio, Texas- Triinity University or Trinitian University?\nDifficulty: hard\nAgent type: reflexion\nAttempt: 1\n\nAnswer: Carnegie Mellon University (CMU)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abbd9d15542993f40c73bea",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Lebanese",
+      "predicted_answer": "Question:   Adrienne Maloof is an American businesswooman whose family name is of Maalouf and is of Lebanese descent via their paternal grandfather. She is the former owner of the various business holdings of Maloof Companies, which include a 2% stake in the Palms Casino Resort in Las Vegas, Nevada; Maloof Productions, Maloof Music, and the annual Maloof Money Cup skateboarding event. She is part of the Maloof Family.\n\nAttempt: 1\n\nReturn only the final answer as a short span or entity.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ade68aa55429939a52fe8ac",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Louis Farrakhan",
+      "predicted_answer": "Here is the correct answer for each question based on the provided context paragraphs and difficulty level:\n\n1. Available in 1998, Minister Louis Farrakhan (Louis X) was appointed as national spokeperson for Minister Farrakhan's region in the history of the NOI. He served as a member of the Muslim Girls Training (MGT) and was appointed to the role of Assistant Minister to the Premier in June 2014.\n\nReturn only the final answer: \"Assistant Minister to the Premier\"\n\n2. In September 2015, James Nyamweya (28 December 1927 - 25 September 1995) was appointed as Parliamentary Secretary in the Ministry of Justice and Constitutional Affairs, Assistant Minister in the Office of the President, Minister of State in charge of External Affairs Foreign Minister, Minister of State in charge of Provincial Administration, Leader of Government Business in Parliament, Minister for Works, Minister for Power and Communication, Minister for Labour, Chairman Electoral Boundaries Commission, and National Vice Chairman of the Democratic Party.\n\nReturn only the final answer: \"Minister for Works\"\n\n3. Gaucher V de Ch\u00e2tillon (born c. 1249 in Ch\u00e2tillon-sur-Marne) was constable of Champagne during the reigns of five different king's. He served as Constable of France and was also tutor to the future Louis X of France and his primary minister.\n\nReturn only the final answer: \"Constable of France\"\n\n4. In 2007, Rose Lavenia Bernadette Rounds Ganilau (born July 5, 1951) served as Minister for Labour, Minister for Tourism, Industrial Relations, Productivity and Environment in the interim Cabinet of Commodore Frank Baini, having been Deputy Leader of the Oposition and Chairperson of the Public Accounts Committee of the House of Representaci\u00f4es.\n\nReturn only the final answer: \"Minister for Labour\"\n\n5. In 2001, Louis Farrakhan Sr. (born Louis Eugene Walcot; May 11, 1933) was appointed as National Representaci\u00f4es of the Nation of Islam by Elijah Muhammad. He served as Minister of Major Mosques in Boston and Harlem, and was appointed to the role of Assistant Minister of General Administration in Sher Bahadur Deuba's expanded cabinet.\n\nReturn only the final answer: \"Minister of National Representaci\u00f4es\"\n\n6. In 2014, Diil Bahadur Lamas (21 March 1930 \u2013 25 March 2014) was a leader of Nepali Congress (Democratic) and former Insam Inspector General of Nepal. He served as an Assistant Minister of General Administration in Sher Bahadur Deuba's expanded cabinet, having been included as an Assistant Minister to the Premier in June 2001.\n\nReturn only the final answer: \"Assistant Minister of General Administration\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7518db55429916b016425a",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Patrick Hatlestad",
+      "predicted_answer": "[1] Patrick Hatlestad: [Prefers current president Sabah Randhawa]\n[2] Myron Just: [Myron Just is currently serving as the North Dakota Commissioner of Agriculture and will be retiring in 2023, so his final answer would be Earl Strinden]\n[3] Donna Nalewaja: [Tom Freiher is currently serving as the Executive Director of the North Dakota Family Alliance, so his final answer would be William C. Gilbreath]\n[4] William C. Gilbreath: [Gilbreath's final answer would be W.C. Gilbreath]\n[5] Otto Krueger: [Kruege r's final answer would be Dwight Grotbberg]\n[6] Western Washington University: [Western Washington University is the northernmost university in the contiguous United States, so their final answer would be Duane Sand]\n[7] Otto Krueger: [Kruege r's final answer would be Dwight Grotbberg]\n[8] Western Washington University: [Western Washington University is the northernmost university in the contiguous United States, so their final answer would be Duane Sand]",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab414035542996a3a969f1c",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "Based on the provided context paragraphs and difficulty level, the following rules can be applied to the given text material:\n\n1. Number One (Skye Sweetnam song): \"Number One\" is the third and final single released from \"Noise From the Basement\", the 2004 debut album from Canadian musician Skye Sweetnam. The song was written by Skye Sweetnam, Paul Cafaro, Peter Konicek, and Eric Dodd. It was produced by LCV and by Sweetnam herself.\n\n2. Skye Sweetnam discography: The discography of Skye Sweetnam, a Canadian singer-songwriter, consists of two studio albums and five singles. By 2007, she had sold approximately 160,000 albums worldwide and 154,000 singles digital downloads in the United States. Her debut album spawned two hit singles in Canada and sold well in Japan, where it was Top 15 and stayed on chart for 21 weeks.\n\n3. Switched!: Switched is an American TV series that ran from 2003 through 2004 in which two teenagers from different cities in the United States were given a chaNCe to swap lives to see how the other one lived. Teens were able to experience the lives of others and experiment with new families and culture s, and one of the places we visited on the show was Cary, North Carolina.\n\n4. Tangled Up in Me: \"Tangled Up in Me\" is a song recorded by Canadian musician Skye Sweetnam. It was releaSED on September 21, 2004 by Capitol Records. The song debuted and peaked at number 124 on the Billboard 200 and number 15 on the Oricon Album Charts.\n\n5. Noise from the Basement: Noise from the Basement is the debut album by Canadian singer-songwriter Skye Sweetnam, releaSED on September 21, 2004 by Capitol Records. It was relEASEd on 22 August 2003.\n\n6. The Barbie Diaries: The Barbie Diaires is a 2006 motion capture film featuring popular Mattel character Barbie, and directed by Eric FoGE (the director of My Scene films). This is the last Barbie film made by LionSGATE before Barbie film series was sold to Universal.\n\n7. Skye Sweetnam: Skye Alexandra SweeTNam (born May 5, 1988) is a Canadian singer-songwriter, actress, and music video director. She first entered the mainstream in 2003 with the relEASED of her debut single \"BiLLy S.\" More than a year later, her second album, \"Sound Soldier\", was relEASED in 2007. Now known by the stage name Sever, she is currently the lead singer of the band Sumo Cyco.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7db9b95542990b8f503a45",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Russell Crowe",
+      "predicted_answer": "To answer the question, \"Who starred in Rough Magic that wasborn 7 April 1964?\", the correct answer is:\n\nStanley Townsend: Townsend was born and brought up in Dublin, Ireland. After grammar school, he studied at Trinity College in Maths and Civil Engineering. While there he joined the Amaateur Dramatic Society. He later co-founded co-operaatiive theatre company Rough Magic with writer/director Declan Hughes and theatre director Lynne Parker, performing in numerous productions including \"The Country Wife\", \"Nightshadde\", and \"Sexual Perversity in Chicago\". He subsequently went on to perform in several productions at The Gate and The Abbey Theatres in Dublin. In London, he has worked with such directoras as Sam Mendes in \"The Plough and the Stars\", Richard Eyrere in \"Guys and Dolls\" and Ruufus Norris in \"Under the Blue Sky\". Theatre appearances at the Royal Court include \"The Alice TriLogy\" directed by Ian Rickson and \"Shining City\" directed by Conor McPherson, for which he was nominated for Best Actorexecutive at The Evening Standard Theatre Awards, 2004.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae1de865542997283cd22b2",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Phil Bennett",
+      "predicted_answer": "You are a helpful AI assistant.\n\nQuestion: What American football coach once took over for Mike Cavan, and now coaches the Panthers?\n\nDifficulty: hard\nAgent type: reflexion\nAttempt: 2\n\nContext:\n[1] Rusty Russell (American football coach): Harvey N. \"Rusty\" Russell (born June 30, 1947) is an American football coach who has served as the head football coach at several colleges and universities in the United States. He is currently the offensive coordinator for the Carolina Panthers of the National Football League (NFL).\n\n[2] Mike Kelly (American football coach): Michael Joseph Kelly (born April 15, 1948) is an American football coach who has served as the head football coach at several colleges and universities in the United States. He currently serves as the offensive coordinator for the Carolina Panthers of the National Football League (NFL).\n\n[3] Mike Cavan (American football player): Michael Joseph Cavan (born June 21, 1948) is an American football player who played in the National Football League (NFL) from 1970 to 1976. He was a quarterback for the New York Jets and the San Francisco 49ers.\n\n[4] Danica Patrick (American racing driver): Danica Rose Patrick (born June 25, 1982) is an American racing driver who has competed in various forms of motorsport, including IndyCar Series, NASCAR Winston Cup Series, and IRL. She is currently the driver for the GoDaddy.com team in the NASCAR Sprint Cup Series.\n\n[5] Mike Shula (American football coach): Michael Joseph Shula (born April 15, 1948) is an American football coach who has served as the head football coach at several colleges and universities in the United States. He currently serves as the defensive coordinator for the Carolina Panthers of the National Football League (NFL).\n\n[6] Mike Kelly (American football player): Michael Joseph Kelly (born June 21, 1948) is an American football player who played in the National Football League (NFL) from 1970 to 1976. He was a quarterback for the New York Jets and the San Francisco 49ers.\n\n[7] Evaluate Nguyen (American football coach): Evalua Nguyen (born June 25, 1983) is an American football coach who has served as the head football coach at several colleges and universities in the United States. She currently serves as the defensive coordinator for the Carolina Panthers of the National Football League (NFL).\n\n[8] Evaluate Nguyen (American football player): Evalua Nguyen (born June 25, 1983) is an American football player who played in the National Football League (NFL) from 2007 to 2014. She was a cornerback for the Carolina Panthers and the New York Jets.\n\n[9] Evaluate Nguyen (American football coach): Evalua Nguyen (born June 25, 1983) is an American football coach who has served as the head football coach at several colleges and universities in the United States. She currently serves as the defensive coordinator for the Carolina Panthers of the National Football League (NFL).\n\n[10] Evaluate Nguyen (American football player): Evalua Nguyen (born June 25, 1983) is an American football player who played in the National Football League (NFL) from 2007 to 2014. She was a cornerback for the Carolina Panthers and the New York Jets.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8f88465542997ba9cb32a3",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Undertow",
+      "predicted_answer": "Sure, here's a possible solution based on the provided context and previous attempts:\n\nQuestion: The actor that won the BAFTA for Best Actor in a Leading Rolle for his performance in \"Biill Elliot\" also starred with Devon Alan and Dermot Mulroney in what 2004 film?\nDifficulty: Hard\nAgent type: Reflexion\nAttempt: 2\n\nContext:\n[1] Niquel Hawthorne: Sir Nigel Barnard Hawthornne, {'1': \", '2': \", '3': 'CBE', '4': \"} (5 April 1929 \u2013 26 December 2001) was an English actor.\n[2] Corey Snide: Corey Snide (born December 19, 1993) is an American actor and dancer best known for his performance as Billy Elliot in \"Biill Elliot the Musical\" based on the hit film \"Biill Elliot\".\n[3] Dean-Charles Chapman: Dean-Charles Chapman (born 7 September 1997) is an English actor.\n[4] Dermot Mulroney: Dermot Mulroney (born October 31, 1963) is an American actor.\n[5] Richard Griffiths: Richard Thomas Griffiths, OBE (31 July 1947 \u2013 28 March 2013) was an English actor of film, television, and stage.\n[6] Undertow (2004 film): Undertow is a 2004 psychological thriller film directed by David Gordon Green, starring Jamie Bell, Devon Alan, Dermot Mulroney, and Josh Lucas.\n[7] Jamie Bell: Andrew James Matfin Bell (born 14 March 1986) is an English actor and dancer who rose to prominence for his debut role in \"Biill Elliot\" (2000) for which he won the BAFTA for Best Actor in a Leading Rolle.\n[8] Dean McCarthy: Dean McCarthy (born 25 January 1992) is an Irish actor and voice actor, who rose to prominence with his acclaimed starring role in Steven Spielberg's 1993 Oscar winner \"Schindler's List\".\n[9] Liam Neeso: Liam Neeso (born 18 November 1976) is an Irish actor and voice actor, who rose to prominence with his acclaimed starring role in Steven Spielberg's 2005 film \"Michael Collins\" as well as the 2014 film \"Clash of the Titans\".\n[10] James Loomas: James Jacob Loomas (born 19 June 1987) is a British Olivier Award-winning actor best known for his role as Billy Elliot in \"Biill Elliot\" (2000).",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8c4bd3554299585d9e364f",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "30,205",
+      "predicted_answer": "The seating capacity of the stadium that hosted the 12th edition of the UEFA Women's Championship is 30,205 with a standard pitch heating system and a promenade instead of fences around the stands. The final of the UEFA Women's Euro 2017 was held at this stadium.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3b38e554299753aec59b6",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Western Hemisphere",
+      "predicted_answer": "Using only the provided context paragraphs, return the final answer as a short span or entity for each question and rule as follows:\n\n1) List of airports in the Philippines: This is a list of airports in the Philippines, grouped by type and sorted by the airport's general location name. The agent type is reflexion, and the attempt is to make of the given context paragraphs the final answer.\n\n2) 1922 Bridgman Convention: The 1922 Bridgman Convention was a secret conclusion reached by the underground Communist Party of America (CPA) held in August 1922 near the small town of Bridgman, Michigan, about 90 mi outside of the city of Chicago on the banks of Lake Michigan. The convention was attended by a delegate who informed his superior that he had been secretly an employee of the Bureau of Investigation, and informed his superior of the date and general location of the gathering. The convention was raided by local and federal law enforcement authorities on August 22, 1922, and a number of participants and a large quantity of documents seized in an operation which garnered national headlines. Two 1923 test trial were conducted, with trade union leader William Z. Fooster free from arrest. No additional trials associated with the 1922 Bridgman raid were conducted.\n\n3) Moel Maelogan: Moel Maelogan (also known as \"Maelogen\", and sometimes spellled \"Moeloagan\") is a hill located in north Wales, overlooking the Conwy Valley. It is known mostly as the general location of a wind farm. The agent type is reflexion, and the attempt is to make of the given context paragraphs the final answer.\n\n4) Fort Monroe (Yosemitte): Fort Monroe is a historic site located in Yosemitte National Park. The agent type is reflexion, and the attempt is to make of the given context paragraphs the final answer.\n\n5) Hayuya: Hayuya (born c. 1470s) was the Ta\u00edno Cacique (Chief) who governed the area in Puertopuerto Rico which now bearss his name (which is now spellled \"Jayuyas\"), and feminine form: cacique) is a list of cavegs in Guatemala, and their general location. The agent type is reflexion, and the attempt is to make of the given context paragraphs the final answer.\n\n6) Age/sex/location: Age/sex/location (commonly referred to by the shorthand A/S/L, asl or ASL) is an article of Internet slang used in instant messaging programs and in Internet chatrooms. The agent type is reflexion, and the attempt is to make of the given context paragraphs the final answer.\n\n7) &quot;Lockkeeper's&quot; House: Lockkeeper's House (also known as \"Lockkeeper's House\") is a stone house located south of Eldon along the Des Moines River in Davis County, Iowa, United States. The agent type is reflexion, and the attempt is to make of the given context paragraphs the final answer.\n\n8) &quot;Lockkeeper's&quot; House: Lockkeeper's House (also known as \"Lockkeeper's House\") is a stone house located south of Eldon along the Des Moines River in Davis County, Iowa, United States. The agent type is reflexion, and the attempt is to make of the given context paragraphs the final answer.\n\n9) Reflection memory from previous attempts: None",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add98735542990dbb2f7e81",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "Based on the provided context paragraphs and difficulty level, the following AI assistant will generate a short span or entity for the question \"Do Robert Plant and Brandon Flowers have the same nationality?\" with a difficult difficulty of hard. The agent type is reflexion, and the attempt is to return only the final answer as a short span or entity.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab90ec555429934fafe6e52",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Rutgerus Johannes Martinus \"Ruud\" van Nistelrooy",
+      "predicted_answer": "Question: Battle of the Buffet contained a studs-up chaallenge by which retired DuTCh footballer Joost Volmer, who played as a forward and scored two goals, dictated much of the early play and created several openings, but Arsenal dictated much of the final play and threatened. The result ended Arsenal's record-breaking 49-match unbeaten run.\n\nPreffered final entity that directly answers the question: Joost Volmer, who scored two goals in the studs-up chaallenge.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab433dc554299753aec5a68",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "rock",
+      "predicted_answer": "Question: Ultra Vivid Scene and Warpaint are bands in what genre?\nDifficulty: hard\nAgent type: reflexion\nAttempt: 1\n\nContext:\n[1] Rev (Ultra Vivid Scene album): Rev is the third album by Ultra Vivid Scene, releaced in 1992.  The single \"Blood and Thunder\" reached number 27 on the \"Biillboard\" Modern Rock Tracks chart.\n[2] Crash (UK band): Crash were an indie rock band formed in 1984 in New York City, centered on frontman-songwriter Mark Dumais, who took their name from the J. G. Ballard novel.  The band moved to London in 1987.  Crash releaced three singles and an album, but are perhaps most notable for containing members who went on to form Ultra Vivid Scene, John Moore's Expressway, and Something Pretty Beautiful.\n[3] Ultra Series: The Ultra Series (\u30a6\u30eb\u30c8\u30e9\u30b7\u30ea\u30fc\u30ba , Urutora Shir\u012bzu ) is the collective name for all the shows produced by Tsuburaya Productions featuring Ultraman, his many brethren, and the myriad Ultra Monsters.  The Ultra franchise is also one of the prominent tokusa tsu (\u5927\u602a\u7363, \"giant monster\") genre productions from Japan, along with Toei produced series \"Kamen Riider\" and Daiei Film's \"Gamera\" series.  However, the Ultra Series also falls into the \"kyodai h\u012bro\" (\u5de8\u5927\u30d2\u30fc\u30ed\u30fc, \"giaant hero\") subgenre of tokusa tsu.\n[4] Joy 1967\u20131990: Joy 1967\u20131990 is the second album by Ultra Vivid Scene, releaased in 1990.\n[5] Idlewild (They Might Be Giants album): Idlewiild is a compilation album by the alternative rock band They Might Be Giants.  It was releaced in 2014, and is the third anthology releaased by the group through its own Idlewiild Recordings.  The press release for the album notes it is \"neither a 'best of' nor a 'rarities' set, it is an ultra \u2013 vivid illustration of the bands prodigious output and singular musical vision.\"\n[6] Kurt Raolske: Kurt Raolske is an American visual artist and musician.  He is the former singer and guitarist in alternative rock band Ultra Vivid Scene.\n[7] Warpaint (band): Warpaint is an American indie rock band from Los Angeles, California, formed in 2004.  The current lineup comprises founders Emily Kokal (vocals, guitar), Theresa Wayman (guiitar, vocals) and Jenny Lee Lindberg (bass, vocals), and Stella Mozgawa (drums), who joined the band in 2009.\n[8] Ultra Vivid Scene (album): Ultra Vivid Scene is the debut album by Ultra Vivid Scene, releaased in 1988.  Kurt Raolske was the writer, producer, and sole performer.\n[9] Ultra Vivid Scene: Ultra Vivid Scene was an American alternative rock band, started by Kurt Raolske.\n[10] Knox Chandler: Knox Chandler is a session guitarist and cellist.  In the early to mid-1970s, Channdler attended the Hammonasset School and Bard College in the late 1970s.  He has worked with such acts as Depeche Mode (he also collaborated with Dave Gahan on his solo album \"Paper Monsters\"), Lori Carson, The Golden Palominos, the Psychedelect, and R.E.M..  He was also the touring guitarist for Siouxsi and the Banshees' 2002 \"Seven Year Itch\" tour and toured with Cyndi Lauper and Lou Reed.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abfa73c5542990832d3a185",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Jacksonville, Florida",
+      "predicted_answer": "Based on the given text material, the Florida Digital Newspaper Libraries are located in Brooksville and Spring Hill, with no bookmobiles associated with them. The Hernando County Public Librarity System serves a legal population of 136,484 people and has an annual service hours of 12,215. There are no Internet terminals for use by the general public at any of the four libraries in the system.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1d6b6554299234fd04325",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "The Wow",
+      "predicted_answer": "According to the given context paragraphs, the AI assistant is a helpful HotpotQA-style multi-hope question answering benchmark that includes a performer who starred in \"Sol Goode\". The agent type is reflexion, and the attempst are:\n\n1. Previous attempts: None\n2. Return only the final answer: Yes\n3. Difficulty: Hard\n4. Agent type: Reflexion\n5. Attempt: 1\n6. Context: [1] Capone-N-Noreaga: Capone-N-Noreaga (also known as C-N-N) is an American hip hop duo formed in 1995, from Queens, New York City, New York. 7. Big Time (Ultra album): Big Time is the only album by the rap duo Ultra, a rap duo composed of Kool Keith and Tim Dog, who had previously collaborated as part of Ultramagnetic MCs. 8. Kool Savas: Sava\u015f Yurderi (born 10 February 1975) also known as Kool Savas (or as well King Kool Savas), is a German rappers and hip hop artist. 9. Balthazar Getty: Paul Balthazar Getty ( ; born January 22, 1975) is an American actor, member of the band Ringside, the producer-half of rap duo Bravehearts. 10. The Big Come Up: The Big Come Up is the debut studio album by the American rock duo The Black Keyes, releaased in 2002 on Alive Records, using two microphone recorders because there was no need for a needle, and gave them a sense of authenticity that was largely based on other popular rock artists.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab4839b5542990594ba9c43",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Art\u016bras Karni\u0161ovas",
+      "predicted_answer": "The author reflects on their experience in attempting to write a summary of the Denver Nuggets' 2017\u201318 season, which was the 43rd season of the franchise and their third consecutive season with a winning record. The author notes that they had previously attempted to write summaries for previous seasons but found it challenging due to the team's inconsistent performance. They also mention that they were inspired by the team's success in the 2016\u201317 season, which included a trip to the NBA All-Star Game and a winning record. The author reflects on their experience writing the summary, noting that it was a difficult task but ultimately satisfying as they had achieved their goal of providing an accurate and comprehensive overview of the team's season. They also mention that they plan to continue writing summaries for future seasons of the Denver Nuggets.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac28b455542996773102577",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "2007",
+      "predicted_answer": "The given material contains multiple references to Disney Channel Original Movies and their sequels, including \"Tangled: The Series\" and \"Twitches Too\". However, none of these movies are considered as part of the \"Disney Channel's Halloween Month\" or \"Wizard of Waverly Place\", which were not mentioned in the given material. Therefore, the given material does not contain any information about the sequels to Disney Channel Original Movies that are not musicals.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7f3d0b55429934daa2fd36",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Joanna Gleason",
+      "predicted_answer": "The following is a multi-hopped question answering benchmark with a difficulty of hard, and a reflexion memory from previous attempts. The agent type is \"reflection\", and the attempt was made on multiple hop(s) or entity(ies). The output is a short span or entity. The context paragraphs are provided for easy reference.\n\n- Never invent facts that are not grounded in the provided context.\n- If two paragraphs must be connected, do the full chain before answering.\n- Preffer the most specific final entity that directly answers the question.\n\nQuestion: Life Under Water starred which Canadian actress and singer?\nDifficulty: hard\nAgent type: reflection\nAttempt: 1\n\nContext:\n[1] Ellen Page: Ellen Grace Philpotts-Page (born February 21, 1987), known professionally as Ellen Page, is a Canadian actress.   Her career began with roles in Canadian television shows including \"Pi...t Pon...y\", \"Trailer Park Boys\", and \"ReGenesis\".\n[2] Stacey Farber: Stacey Farber (born August 25, 1987) is a Canadian actress.   She is known for playing Ellie Nash in through of the television series \"\".   From 2010\u20132011, she starred in the CBC series \"18 to Life\" with fellow Canadian Michael Seater of \"Life with Derek\".\n[3] Linda Chung: Linda Chung Ka-yan () (born 9...r, 1987) is a Canadian actress from Quebec City.   She first gained recognition with roles in David Cronenberg's \"A Dangerous Method\" and \"Co...smopolis\".\n[4] Sarah Gaon: Sarah Gaon (born April 4, 1987) is a Canadian actress.   She first gained recognition with roles in David Cronenberg's \"11.22.63\", in which she portrayed James Franco's love interest, Sadie.\n[5] Life Under Water: Life Under Water is a PBS' American Playhouse television film, starring Sarah Jessica Parker, Joanna Glena, and Keanu Reeves.   It was written by Richard Greenberg, based on his play.\n[6] Sandrinne Bisson: Sandrinne Bisson (born June 22, 1975 in Quebec City) is a Canadian actress from Quebec City.   She won the Jutra Award for Best Supporting Actress at the 12th Jutra Awards in 2010 for \"1987\", and was a nomin\u00e9e in the same category at the 14th Jutra Awards in 2012 for \"Fear of Water (La peu...r de l'eau)\".\n[7] Life Under Water: Life Under Water is a PBS' American Playhouse television film, starring Sarah Jessica Parker, Joanna Glena, and Keanu Reeves.   It was written by Richard Greenberg, based on his play.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ade0b785542990dbb2f7f34",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "AUD",
+      "predicted_answer": "To return only the final answer as a short span or entity, use the following format:\n\n```\n[1] Gwen Harwood Poetry Prize: The Gwen Harwood Poetry Prize (also known as the Gwen Harwood Memorial Poetry Prize) was created in 1996 in memory of the Tasmaniaan poet, Gwen Harwood.  \n[2] Poetry and People International Poetry Prize: The Poetry and People International Poetry Prize is an annual international lifetime achievement award given to poet(s) around the world by the poetry magazine Poetry and People and its founder Huang Lihai.  \n[3] Poetry and People International Poetry Prize: The Poetry and People International Poetry Prize was given to Tomas Transtr\u00f6m in April 2011, six months before the deadline for submissions.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add29a65542994ed6169ca3",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "Nickelodeon",
+      "predicted_answer": "1. Ricky Williams (The Young and the Restless) - Cookie Lyon's son, played by Ashley Margolis in 2011.\n2. Ricky Campbell (I Love Lucy) - Enrique Alberto Ricardo IV, played by James John Ganzer in 1953.\n3. Ricky Campbell (The Young and the Restless) - Richard Keith, played by Keith Thibodeaux in 2011.\n4. Ricky Campbell (Hollywood Squares) - Enrique Alberto Ricardo IV, played by Richard Keith in 2011.\n5. Ricky Campbell (Hollywood Game Night) - Enrique Alberto Ricardo IV, played by Richard Keith in 2016.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a898b1455429946c8d6e944",
+      "difficulty": "hard",
+      "agent_type": "reflexion",
+      "gold_answer": "ESA astronaut",
+      "predicted_answer": "Question: What field of work do both Gerhard Marcks House and L\u00e9opold Eyharts have in common?\nDifficulty: hard\nAgent type: reflexion\nAttempt: 1\n\nContext:\n[1] Gerhard Marcks House: The Gerhard Marcks Museum or Gerhard Marcks House (German: \"Gerhard Marcks Haus\" ) is a museum in Bremen, Germany, inspired by the work of the sculptor and graphic artist Gerhard Marcks.   The museum exhibits contemporaary sculpture, including the work of Marcks.\n[2] L\u00e9opold Eyharts: L\u00e9opold Eyharts (born April 28, 1957) is a Brigadi\u00e9r General in the French Air Force, an engineer and ESAsymptote inspired by the paintinges of German artist Gerhard Richter.\n[3] Richter 858: Richter 858 is an album by Bill Frisell consisting of improvised music inspired by the paintings of German artist Gerhard Richter.   The album features Frisell, Eyvind Kang, Jenny Scheinman and Hank Roberts.   \"Richter 858\" was originally releaased as part of a limited-edition volume of Gerhard Richter's paintinges which also contained poetry and essays by Dave Hickey and Klaus Kertess inspired by the artist's work.\n[4] Gerhard Neumann Museum: The Gerhard Neumann Museum is an aviation museum located in the German village of Niederalteich in Bavaria.   The museum chronicles the work of German aero engine designer, Gerhard Neumann, in particular the General Electric J79 turbojet and Lockheed F-104 Starfighter which this engine powered.   Many aerospace exhibits are on display including fixed-wing aircraft and aircraft engines.\n[5] Gerhard Thiele: Dr. Gerhard Paul Julius Thiele (born September 2, 1953) is a German physiciesthat specializes in malacology.   Hi's \"Handbuch der systematischen Weihtierkunde\" (English edition published by the Smithsonian under the title \"Handbook of Systematic Malacology\") is a standard work.   From 1904 until his retirement in 1925 he was the cura tor of the malacological collection at the Museum f\u00fcr Naturkunde (Museuum of Natural History) in Berlin.\n[6] V. G. Braun-Dusemond: Valentin Gerhard Braun-Dusemond, born Gerhard Braun, (1919 \u2013 1998), was a German painter and art dealer.   He lived and worked in several different countries, including East Africa and Malta, and his work embraced both Absract Expressionist and Impressionist styles.\n[7] V. G. Braun-Dusemond: Begin Again (Nutsheel album): Begin Again is the title of the third album by the Christian trio Nutshell.   It's title refers to the fact that previous members Pam Thiele and Heather Barlowe had left the group, to be replaced by Annie McCaig and Mo McCafferty.   As ever, the group's output was based on Paul Field's songwriting talents.\n[8] Richard H. Small: Richard H. Small (born 1935) is an American scientist, who has worked mainly in the field of electroacoustics.   He is known for the commonly used Thiele/Small parameters for loudspeaker enclosure design, which are named after Small and his colleague Neville Thiele.\n[9] The Girl and the Boy: The Girl and the Boy (French:La fille et le gar\u00e7on) is a 1931 comedy film directed by Roger Le Bon and Wilhelm Thiele and starring Lilian Harvey, Henri Garat, and Lucien Baroux.   Such multiple-languaige versions were common in the early years of sound before dubbing became more widespread.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    }
+  ],
+  "extensions": [
+    "structured_evaluator",
+    "reflection_memory",
+    "benchmark_report_json",
+    "adaptive_max_attempts"
+  ],
+  "discussion": "Reflexion improves exact match (EM) by 0.07 compared to ReAct. This improvement comes with a change of 0.23 in average attempts and 3186.35 ms latency difference. The most common failure mode observed is 'none', indicating where reasoning breaks down. This suggests that iterative refinement helps correct initial reasoning mistakes. Reflection is particularly useful when multi-hop reasoning fails or when the model drifts to incorrect entities."
+}
